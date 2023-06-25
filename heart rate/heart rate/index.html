@@ -1,0 +1,1317 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../camera/wearable%20camera/">
+      
+      
+        <link rel="next" href="../../huawei/huawei%20band/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
+    
+    
+      
+        <title>Heart rate - wearable-device-paper-daily</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "hh1oiyc7g7");
+</script>
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#heart-rate" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="wearable-device-paper-daily" class="md-header__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wearable-device-paper-daily
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Heart rate
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="wearable-device-paper-daily" class="md-nav__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    wearable-device-paper-daily
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        arxiv-daily latest papers around wearable device
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Electroencephalography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Electroencephalography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electroencephalography/Electroencephalography/" class="md-nav__link">
+        Electroencephalography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Electromyography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Electromyography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electromyography/Electromyography/" class="md-nav__link">
+        Electromyography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          PPG
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          PPG
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPG/Photoplethysmography/" class="md-nav__link">
+        Photoplethysmography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Actigraphy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Actigraphy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actigraphy/actigraphy/" class="md-nav__link">
+        Actigraphy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          All search terms
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          All search terms
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../all%20search%20terms/all%20search%20terms/" class="md-nav__link">
+        All search terms
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Apple
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Apple
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apple/apple%20watch/" class="md-nav__link">
+        Apple watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Camera
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Camera
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../camera/wearable%20camera/" class="md-nav__link">
+        Wearable camera
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Heart rate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Heart rate
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Heart rate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Heart rate
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#heart-rate" class="md-nav__link">
+    heart rate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          Huawei
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Huawei
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20band/" class="md-nav__link">
+        Huawei band
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20watch/" class="md-nav__link">
+        Huawei watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          Smart glass
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Smart glass
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20glass/smart%20glass/" class="md-nav__link">
+        Smart glass
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Smart ring
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Smart ring
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20ring/smart%20ring/" class="md-nav__link">
+        Smart ring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Smart watch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Smart watch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20watch/smart%20watch/" class="md-nav__link">
+        Smart watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          Wearable device
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Wearable device
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wearable%20device/wearable%20device/" class="md-nav__link">
+        Wearable device
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#heart-rate" class="md-nav__link">
+    heart rate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Heart rate</h1>
+
+<h3 id="heart-rate">heart rate</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Publish Date</th>
+<th align="center">Title</th>
+<th align="center">Authors</th>
+<th align="center">PDF</th>
+<th align="center">Code</th>
+<th align="center">Abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Improved Signal Detection for Ambient Backscatter Communications</strong></td>
+<td align="center">S. Zargari et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.13083v1">2306.13083v1</a></td>
+<td align="center">null</td>
+<td align="center">In ambient backscatter communication (AmBC) systems, passive tags connect to a reader by reflecting an ambient radio frequency (RF) signal. However, the reader may not know the channel states and RF source parameters and can experience interference. The traditional energy detector (TED) appears to be an ideal solution. However, it performs poorly under these conditions. To address this, we propose two new detectors: (1) A joint correlation-energy detector (JCED) based on the first-order correlation of the received samples and (2) An improved energy detector (IED) based on the p-th norm of the received signal vector. We compare the performance of the IED and TED under generalized noise modeled using the McLeish distribution and derive a general analytical formula for the area under the receiver operating characteristic (ROC) curves. Based on our results, both detectors outperform TED. For example, the probability of detection with a false alarm rate of 1% for JCED and IED is 14% and 5% higher, respectively, compared to TED. These gains are even higher using the direct interference cancellation (DIC) technique, with increases of 16% and 7%, respectively. Overall, our proposed detectors offer better performance than the TED, making them useful tools for improving AmBC system performance.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Armed Conflict and Early Human Capital Accumulation: Evidence from Cameroon's Anglophone Conflict</strong></td>
+<td align="center">Hector Galindo-Silva et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.13070v1">2306.13070v1</a></td>
+<td align="center">null</td>
+<td align="center">This paper examines the impact of the Anglophone Conflict in Cameroon on human capital accumulation. Using high-quality individual-level data on test scores and information on conflict-related violent events, a difference-in-differences design is employed to estimate the conflict's causal effects. The results show that an increase in violent events and conflict-related deaths causes a significant decline in test scores in reading and mathematics. The conflict also leads to higher rates of teacher absenteeism and reduced access to electricity in schools. These findings highlight the adverse consequences of conflict-related violence on human capital accumulation, particularly within the Anglophone subsystem. The study emphasizes the disproportionate burden faced by Anglophone pupils due to language-rooted tensions and segregated educational systems.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Data augmentation for recommender system: A semi-supervised approach using maximum margin matrix factorization</strong></td>
+<td align="center">Shamal Shaikh et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.13050v1">2306.13050v1</a></td>
+<td align="center">null</td>
+<td align="center">Collaborative filtering (CF) has become a popular method for developing recommender systems (RS) where ratings of a user for new items is predicted based on her past preferences and available preference information of other users. Despite the popularity of CF-based methods, their performance is often greatly limited by the sparsity of observed entries. In this study, we explore the data augmentation and refinement aspects of Maximum Margin Matrix Factorization (MMMF), a widely accepted CF technique for the rating predictions, which have not been investigated before. We exploit the inherent characteristics of CF algorithms to assess the confidence level of individual ratings and propose a semi-supervised approach for rating augmentation based on self-training. We hypothesize that any CF algorithm's predictions with low confidence are due to some deficiency in the training data and hence, the performance of the algorithm can be improved by adopting a systematic data augmentation strategy. We iteratively use some of the ratings predicted with high confidence to augment the training data and remove low-confidence entries through a refinement process. By repeating this process, the system learns to improve prediction accuracy. Our method is experimentally evaluated on several state-of-the-art CF algorithms and leads to informative rating augmentation, improving the performance of the baseline approaches.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>GT-TSCH: Game-Theoretic Distributed TSCH Scheduler for Low-Power IoT Networks</strong></td>
+<td align="center">Omid Tavallaie et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.13039v1">2306.13039v1</a></td>
+<td align="center">null</td>
+<td align="center">Time-Slotted Channel Hopping (TSCH) is a synchronous medium access mode of the IEEE 802.15.4e standard designed for providing low-latency and highly-reliable end-to-end communication. TSCH constructs a communication schedule by combining frequency channel hopping with Time Division Multiple Access (TDMA). In recent years, IETF designed several standards to define general mechanisms for the implementation of TSCH. However, the problem of updating the TSCH schedule according to the changes of the wireless link quality and node's traffic load left unresolved. In this paper, we use non-cooperative game theory to propose GT-TSCH, a distributed TSCH scheduler designed for low-power IoT applications. By considering selfish behavior of nodes in packet forwarding, GT-TSCH updates the TSCH schedule in a distributed approach with low control overhead by monitoring the queue length, the place of the node in the Directed Acyclic Graph (DAG) topology, the quality of the wireless link, and the data packet generation rate. We prove the existence and uniqueness of Nash equilibrium in our game model and we find the optimal number of TSCH Tx timeslots to update the TSCH slotframe. To examine the performance of our contribution, we implement GT-TSCH on Zolertia Firefly IoT motes and the Contiki-NG Operating System (OS). The evaluation results reveal that GT-TSCH improves performance in terms of throughput and end-to-end delay compared to the state-of-the-art method.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Global existence of 2D electron MHD near a steady state</strong></td>
+<td align="center">Mimi Dai et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.13036v1">2306.13036v1</a></td>
+<td align="center">null</td>
+<td align="center">We study the electron magnetohydrodynamics (MHD) in two dimensional geometry, which has a rich family of steady states. In an anisotropic resistivity context, we show global in time existence of small smooth solution near a shear type steady state. Convergence rate of the solution to the steady state is also obtained.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Toward Automated Detection of Microbleeds with Anatomical Scale Localization: A Complete Clinical Diagnosis Support Using Deep Learning</strong></td>
+<td align="center">Jun-Ho Kim et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.13020v1">2306.13020v1</a></td>
+<td align="center">null</td>
+<td align="center">Cerebral Microbleeds (CMBs) are chronic deposits of small blood products in the brain tissues, which have explicit relation to various cerebrovascular diseases depending on their anatomical location, including cognitive decline, intracerebral hemorrhage, and cerebral infarction. However, manual detection of CMBs is a time-consuming and error-prone process because of their sparse and tiny structural properties. The detection of CMBs is commonly affected by the presence of many CMB mimics that cause a high false-positive rate (FPR), such as calcification and pial vessels. This paper proposes a novel 3D deep learning framework that does not only detect CMBs but also inform their anatomical location in the brain (i.e., lobar, deep, and infratentorial regions). For the CMB detection task, we propose a single end-to-end model by leveraging the U-Net as a backbone with Region Proposal Network (RPN). To significantly reduce the FPs within the same single model, we develop a new scheme, containing Feature Fusion Module (FFM) that detects small candidates utilizing contextual information and Hard Sample Prototype Learning (HSPL) that mines CMB mimics and generates additional loss term called concentration loss using Convolutional Prototype Learning (CPL). The anatomical localization task does not only tell to which region the CMBs belong but also eliminate some FPs from the detection task by utilizing anatomical information. The results show that the proposed RPN that utilizes the FFM and HSPL outperforms the vanilla RPN and achieves a sensitivity of 94.66% vs. 93.33% and an average number of false positives per subject (FPavg) of 0.86 vs. 14.73. Also, the anatomical localization task further improves the detection performance by reducing the FPavg to 0.56 while maintaining the sensitivity of 94.66%.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Generation of heralded optical `Schroedinger cat' states by photon-addition</strong></td>
+<td align="center">Yi-Ru Chen et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.13011v1">2306.13011v1</a></td>
+<td align="center">null</td>
+<td align="center">Optical "Schr\"odinger cat" states, the non-classical superposition of two quasi-classical coherent states, serve as a basis for gedanken experiments testing quantum physics on mesoscopic scales and are increasingly recognized as a resource for quantum information processing. Here, we report the first experimental realization of optical "Schr\"odinger cats" by adding a photon to a squeezed vacuum state, so far only photon-subtraction protocols have been realized. Photon-addition gives us the advantage of using heralded signal photons as experimental triggers, and we can generate "Schr\"odinger cats" at rates exceeding $8.5 \times 10^4$ counts per second; at least one order of magnitude higher than all previously reported realizations. Wigner distributions with pronounced negative parts are demonstrated at down to -8.89 dB squeezing, even when the initial squeezed vacuum input state has low purity. Benchmarking against such a degraded squeezed input state we report a maximum fidelity of more than 80% with a maximum cat amplitude of $</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Minimalist and High-Quality Panoramic Imaging with PSF-aware Transformers</strong></td>
+<td align="center">Qi Jiang et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12992v1">2306.12992v1</a></td>
+<td align="center"><a href="https://github.com/zju-jiangqi/pcie-part">link</a></td>
+<td align="center">High-quality panoramic images with a Field of View (FoV) of 360-degree are essential for contemporary panoramic computer vision tasks. However, conventional imaging systems come with sophisticated lens designs and heavy optical components. This disqualifies their usage in many mobile and wearable applications where thin and portable, minimalist imaging systems are desired. In this paper, we propose a Panoramic Computational Imaging Engine (PCIE) to address minimalist and high-quality panoramic imaging. With less than three spherical lenses, a Minimalist Panoramic Imaging Prototype (MPIP) is constructed based on the design of the Panoramic Annular Lens (PAL), but with low-quality imaging results due to aberrations and small image plane size. We propose two pipelines, i.e. Aberration Correction (AC) and Super-Resolution and Aberration Correction (SR&amp;AC), to solve the image quality problems of MPIP, with imaging sensors of small and large pixel size, respectively. To provide a universal network for the two pipelines, we leverage the information from the Point Spread Function (PSF) of the optical system and design a PSF-aware Aberration-image Recovery Transformer (PART), in which the self-attention calculation and feature extraction are guided via PSF-aware mechanisms. We train PART on synthetic image pairs from simulation and put forward the PALHQ dataset to fill the gap of real-world high-quality PAL images for low-level vision. A comprehensive variety of experiments on synthetic and real-world benchmarks demonstrates the impressive imaging results of PCIE and the effectiveness of plug-and-play PSF-aware mechanisms. We further deliver heuristic experimental findings for minimalist and high-quality panoramic imaging. Our dataset and code will be available at https://github.com/zju-jiangqi/PCIE-PART.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Slowly Rotating Accretion Flow Around SMBH in Elliptical Galaxy: Case With Outflow</strong></td>
+<td align="center">Razieh Ranjbar et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12990v1">2306.12990v1</a></td>
+<td align="center">null</td>
+<td align="center">Observational evidence and many numerical simulations show the existence of wind (i.e., uncollimated outflow) in accretion systems of the elliptical galaxy center. One of the primary aims of this study is to investigate the solutions of slowly rotating accretion flows around the supermassive black hole with outflow. This paper presents two distinct physical regions: supersonic and subsonic, that extend from the outer boundary to the black hole. In our numerical solution, the outer boundary is chosen beyond the Bondi radius. Due to strong gravity, we ignore outflow (i.e., $s = 0$) in the inner region (within $\sim 10 r_s$). The radial velocity of the flow at the outer region is significantly increased due to the presence of the outflow. Compared to previous works, the one accretion mode - namely, slowly rotating case, which corresponds to low accretion rates that have general wind output is carefully described, and the effect of galaxy potential and the feedback effects by the wind in this mode are taken into account. Since the power-law form of the mass accretion rate is mathematically compatible with our equations, we consider a radius-dependent mass accretion rate ($\dot{M}_{in} \propto r^s$), where $s$ is a free parameter and shows the intensity of outflow. There is an unknown mechanism for removing the mass, angular momentum, and energy by outflows in this study. The effects of the outflow appear well on the outer edge of the flow.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Rate-Splitting Multiple Access for 6G Networks: Ten Promising Scenarios and Applications</strong></td>
+<td align="center">Jeonghun Park et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12978v1">2306.12978v1</a></td>
+<td align="center">null</td>
+<td align="center">In the upcoming 6G era, multiple access (MA) will play an essential role in achieving high throughput performances required in a wide range of wireless applications. Since MA and interference management are closely related issues, the conventional MA techniques are limited in that they cannot provide near-optimal performance in universal interference regimes. Recently, rate-splitting multiple access (RSMA) has been gaining much attention. RSMA splits an individual message into two parts: a common part, decodable by every user, and a private part, decodable only by the intended user. Each user first decodes the common message and then decodes its private message by applying successive interference cancellation (SIC). By doing so, RSMA not only embraces the existing MA techniques as special cases but also provides significant performance gains by efficiently mitigating inter-user interference in a broad range of interference regimes. In this article, we first present the theoretical foundation of RSMA. Subsequently, we put forth four key benefits of RSMA: spectral efficiency, robustness, scalability, and flexibility. Upon this, we describe how RSMA can enable ten promising scenarios and applications along with future research directions to pave the way for 6G.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Sum-Rate Maximization of RSMA-based Aerial Communications with Energy Harvesting: A Reinforcement Learning Approach</strong></td>
+<td align="center">Jaehyup Seong et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12977v1">2306.12977v1</a></td>
+<td align="center">null</td>
+<td align="center">In this letter, we investigate a joint power and beamforming design problem for rate-splitting multiple access (RSMA)-based aerial communications with energy harvesting, where a self-sustainable aerial base station serves multiple users by utilizing the harvested energy. Considering maximizing the sum-rate from the long-term perspective, we utilize a deep reinforcement learning (DRL) approach, namely the soft actor-critic algorithm, to restrict the maximum transmission power at each time based on the stochastic property of the channel environment, harvested energy, and battery power information. Moreover, for designing precoders and power allocation among all the private/common streams of the RSMA, we employ sequential least squares programming (SLSQP) using the Han-Powell quasi-Newton method to maximize the sum-rate for the given transmission power via DRL. Numerical results show the superiority of the proposed scheme over several baseline methods in terms of the average sum-rate performance.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Whitham modulation theory for the Zakharov-Kuznetsov equation and transverse instability of its periodic traveling wave solutions</strong></td>
+<td align="center">Gino Biondini et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12966v1">2306.12966v1</a></td>
+<td align="center">null</td>
+<td align="center">We derive the Whitham modulation equations for the Zakharov-Kuznetsov equation via a multiple scales expansion and averaging two conservation laws over one oscillation period of its periodic traveling wave solutions. We then use the Whitham modulation equations to study the transverse stability of the periodic traveling wave solutions. We find that all such solutions are linearly unstable, and we obtain an explicit expression for the growth rate of the most unstable wave numbers. We validate these predictions by linearizing the equation around its periodic solutions and solving the resulting eigenvalue problem numerically. Finally, we calculate the growth rate of the solitary waves analytically. The predictions of Whitham modulation theory are in excellent agreement with both of these approaches.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Star cluster formation and feedback in different environments of a Milky Way-like galaxy</strong></td>
+<td align="center">Ahmad A. Ali et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12945v1">2306.12945v1</a></td>
+<td align="center">null</td>
+<td align="center">It remains unclear how galactic environment affects star formation and stellar cluster properties. This is difficult to address in Milky Way-mass galaxy simulations because of limited resolution and less accurate feedback compared to cloud-scale models. We carry out zoom-in simulations to re-simulate 100-300 pc regions of a Milky Way-like galaxy using smoothed particle hydrodynamics, including finer resolution (0.4 Msun per particle), cluster-sink particles, ray-traced photoionization from O stars, H$<em SFR="SFR">2$/CO chemistry, and ISM heating/cooling. We select $10^6$ Msun cloud complexes from a galactic bar, inner spiral arm, outer arm, and inter-arm region (in order of galactocentric radius), retaining the original galactic potentials. The surface densities of star formation rate and neutral gas follow $\Sigma</em> \propto \Sigma_{gas}^{1.3}$, with the bar lying higher up the relation than the other regions. However, the inter-arm region forms stars 2-3x less efficiently than the arm models at the same $\Sigma_{gas}$. The bar produces the most massive cluster, the inner arm the second, and the inter-arm the third. Almost all clusters in the bar and inner arm are small (radii &lt; 5 pc), while 30-50 per cent of clusters in the outer arm and inter-arm have larger radii more like associations. Bar and inner arm clusters rotate at least twice as fast, on average, than clusters in the outer arm and inter-arm regions. The degree of spatial clustering also decreases from bar to inter-arm. Our results indicate that young massive clusters, potentially progenitors of globular clusters, may preferentially form near the bar/inner arm compared to outer arm/inter-arm regions.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>The source of electrons at comet 67P</strong></td>
+<td align="center">P. Stephenson et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12942v1">2306.12942v1</a></td>
+<td align="center">null</td>
+<td align="center">We examine the origin of electrons in a weakly outgassing comet, using Rosetta mission data and a 3D collisional model of electrons at a comet. We have calculated a new dataset of electron-impact ionization (EII) frequency throughout the Rosetta escort phase, with measurements of the Rosetta Plasma Consortium's Ion and Electron Sensor (RPC/IES). The EII frequency is evaluated in 15-minute intervals and compared to other Rosetta datasets.   Electron-impact ionization is the dominant source of electrons at 67P away from perihelion and is highly variable (by up to three orders of magnitude). Around perihelion, EII is much less variable and less efficient than photoionization at Rosetta. Several drivers of the EII frequency are identified, including magnetic field strength and the outgassing rate. Energetic electrons are correlated to the Rosetta-upstream solar wind potential difference, confirming that the ionizing electrons are solar wind electrons accelerated by an ambipolar field.   The collisional test particle model incorporates a spherically symmetric, pure water coma and all the relevant electron-neutral collision processes. Electric and magnetic fields are stationary model inputs, and are computed using a fully-kinetic, collisionless Particle-in-Cell simulation. Collisional electrons are modelled at outgassing rates of $Q=10^{26}$ s$^{-1}$ and $Q=1.5\times10^{27}$ s$^{-1}$. Secondary electrons are the dominant population within a weakly outgassing comet. These are produced by collisions of solar wind electrons with the neutral coma.   The implications of large ion flow speed estimates at Rosetta, away from perihelion, are discussed in relation to multi-instrument studies and the new results of the EII frequency obtained in the present study.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Implicit spoken language diarization</strong></td>
+<td align="center">Jagabandhu Mishra et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12913v1">2306.12913v1</a></td>
+<td align="center">null</td>
+<td align="center">Spoken language diarization (LD) and related tasks are mostly explored using the phonotactic approach. Phonotactic approaches mostly use explicit way of language modeling, hence requiring intermediate phoneme modeling and transcribed data. Alternatively, the ability of deep learning approaches to model temporal dynamics may help for the implicit modeling of language information through deep embedding vectors. Hence this work initially explores the available speaker diarization frameworks that capture speaker information implicitly to perform LD tasks. The performance of the LD system on synthetic code-switch data using the end-to-end x-vector approach is 6.78% and 7.06%, and for practical data is 22.50% and 60.38%, in terms of diarization error rate and Jaccard error rate (JER), respectively. The performance degradation is due to the data imbalance and resolved to some extent by using pre-trained wave2vec embeddings that provide a relative improvement of 30.74% in terms of JER.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>The limit of macroscopic homogeneous ice nucleation at the nanoscale</strong></td>
+<td align="center">John A. Hayton et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12903v1">2306.12903v1</a></td>
+<td align="center">null</td>
+<td align="center">Nucleation in small volumes of water has garnered renewed interest due to the relevance of pore condensation and freezing under conditions of low partial pressures of water, such as in the upper troposphere. Molecular simulations can in principle provide insight on this process at the molecular scale that is challenging to achieve experimentally. However, there are discrepancies in the literature as to whether the rate in confined systems is enhanced or suppressed relative to bulk water at the same temperature and pressure. In this study, we investigate the extent to which the size of the critical nucleus and the rate at which it grows in thin films of water are affected by the thickness of the film. Our results suggest that nucleation remains bulk-like in films that are barely large enough accommodate a critical nucleus. This conclusion seems robust to the presence of physical confining boundaries. We also discuss the difficulties in unambiguously determining homogeneous nucleation rates in nanoscale systems, owing to the challenges in defining the volume. Our results suggest any impact on a film's thickness on the rate is largely inconsequential for present day experiments.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Collective modes of a collisional anisotropic quark-gluon plasma</strong></td>
+<td align="center">Ruizhe Zhao et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12851v1">2306.12851v1</a></td>
+<td align="center">null</td>
+<td align="center">In this paper we consider the collective modes of a momentum-space anisotropic quark-gluon plasma taking into account the effect of collisions between the plasma constituents. Our analysis is carried out using a collisional kernel of Bhatnagar-Gross-Krook form and extends prior analyses in the literature by considering all possible angles of propagation of the gluonic modes relative to the momentum-anisotropy axis. We extract both the stable and unstable modes as a function of the collision rate and confirm prior findings that gluonic unstable modes can be eliminated from the spectrum if the collision rate is sufficiently large. In addition, we discuss the conditions necessary for the existence of unstable modes and present evidence that unstable mode growth rates are maximal for modes with momentum along the anisotropy direction. Finally, we demonstrate that when there is a finite collisional rate, gluonic unstable modes are absent from the spectrum at both small and large momentum anisotropy. These results pave the way for understanding the impact of collisions on a variety of non-equilibrium quark-gluon plasma observables.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Detailed study of the astrophysical direct capture reaction $^{6}{\rm Li}(p, γ)^{7}{\rm Be}$ in a potential model approach</strong></td>
+<td align="center">E. M. Tursunov et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12838v1">2306.12838v1</a></td>
+<td align="center">null</td>
+<td align="center">The astrophysical $S$ factor and reaction rates of the direct capture process $^{6}$Li(p,$\gamma)^{7}$Be are estimated within a two-body single-channel potential model approach. Central potentials of the Gaussian-form in the $^2P_{3/2}$ and $^2P_{1/2}$ waves are adjusted to reproduce the binding energies and the empirical values of the asymptotic normalization coefficients (ANC) for the $^7$Be(3/2$^-$) ground and $^7$Be(1/2$^-$) excited bound states, respectively. The parameters of the potential in the most important $^2S_{1/2}$ scattering channel were fitted to reproduce the empirical phase shifts from the literature and the low-energy astrophysical $S$ factor of the LUNA collaboration. The obtained results for the astrophysical $S$ factor and the reaction rates are in a very good agreement with available experimental data sets. The numerical estimates reproduce not only the absolute values, but also the energy and temperature dependence of the $S$ factor and reaction rates of the LUNA collaboration, respectively. The estimated $^{7}{\rm Li/H}$ primordial abundance ratio $(4.67\pm 0.04 )\times 10^{-10}$ is well consistent with recent BBN result of $(4.72\pm 0.72) \times 10^{-10}$ after the Planck observation.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>MultiTASC: A Multi-Tenancy-Aware Scheduler for Cascaded DNN Inference at the Consumer Edge</strong></td>
+<td align="center">Sokratis Nikolaidis et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12830v1">2306.12830v1</a></td>
+<td align="center">null</td>
+<td align="center">Cascade systems comprise a two-model sequence, with a lightweight model processing all samples and a heavier, higher-accuracy model conditionally refining harder samples to improve accuracy. By placing the light model on the device side and the heavy model on a server, model cascades constitute a widely used distributed inference approach. With the rapid expansion of intelligent indoor environments, such as smart homes, the new setting of Multi-Device Cascade is emerging where multiple and diverse devices are to simultaneously use a shared heavy model on the same server, typically located within or close to the consumer environment. This work presents MultiTASC, a multi-tenancy-aware scheduler that adaptively controls the forwarding decision functions of the devices in order to maximize the system throughput, while sustaining high accuracy and low latency. By explicitly considering device heterogeneity, our scheduler improves the latency service-level objective (SLO) satisfaction rate by 20-25 percentage points (pp) over state-of-the-art cascade methods in highly heterogeneous setups, while serving over 40 devices, showcasing its scalability.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Global dynamics of a predator-prey model with alarm-taxis</strong></td>
+<td align="center">Songzhi Li et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12828v1">2306.12828v1</a></td>
+<td align="center">null</td>
+<td align="center">This paper concerns with the global dynamics of classical solutions to an important alarm-taxis ecosystem, which demonstrates the behaviors of prey that attract secondary predator when threatened by primary predator. And the secondary predator pursues the signal generated by the interaction of the prey and primary predator. However, it seems that the necessary gradient estimates for global existence cannot be obtained in critical case due to strong coupled structure. Thereby, we develop a new approach to estimate the gradient of prey and primary predator which takes advantage of slightly higher damping power. Then the boundedness of classical solutions in two dimension with Neumann boundary conditions can be established by energy estimates and semigroup theory. Moreover, by constructing Lyapunov functional, it is proved that the coexistence homogeneous steady states is asymptotically stability and the convergence rate is exponential under certain assumptions on the system coefficients.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Harnessing the Potential of Optical Communications for the Metaverse</strong></td>
+<td align="center">Baha Eddine Youcef Belmekki et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12822v1">2306.12822v1</a></td>
+<td align="center">null</td>
+<td align="center">The Metaverse is a digital world that offers an immersive virtual experience. However, the Metaverse applications are bandwidth-hungry and delay-sensitive that require ultrahigh data rates, ultra-low latency, and hyper-intensive computation. To cater for these requirements, optical communication arises as a key pillar in bringing this paradigm into reality. We highlight in this paper the potential of optical communications in the Metaverse. First, we set forth Metaverse requirements in terms of capacity and latency; then, we introduce ultra-high data rates requirements for various Metaverse experiences. Then, we put forward the potential of optical communications to achieve these data rate requirements in backbone, backhaul, fronthaul, and access segments. Both optical fiber and optical wireless communication (OWC) technologies, as well as their current and future expected data rates, are detailed. In addition, we propose a comprehensive set of configurations, connectivity, and equipment necessary for an immersive Metaverse experience. Finally, we identify a set of key enablers and research directions such as analog neuromorphic optical computing, optical intelligent reflective surfaces (IRS), hollow core fiber (HCF), and terahertz (THz).</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Searching for supermassive charged gravitinos in underground experiments</strong></td>
+<td align="center">Krzysztof A. Meissner et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12797v1">2306.12797v1</a></td>
+<td align="center">null</td>
+<td align="center">We examine possible experimental signatures that may be exploited to search for stable supermassive particles with electric charges of $O(1)$ in future underground experiments, and the upcoming JUNO experiment in particular. The telltale signal would be a correlated sequence of three or more nuclear recoils along a straight line, corresponding to the motion of a non-relativistic ($\beta &lt;10^{-2}$) particle that could enter the detector from any direction. We provide some preliminary estimates for the expected event rates.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>DiffWA: Diffusion Models for Watermark Attack</strong></td>
+<td align="center">Xinyu Li et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12790v1">2306.12790v1</a></td>
+<td align="center">null</td>
+<td align="center">With the rapid development of deep neural networks(DNNs), many robust blind watermarking algorithms and frameworks have been proposed and achieved good results. At present, the watermark attack algorithm can not compete with the watermark addition algorithm. And many watermark attack algorithms only care about interfering with the normal extraction of the watermark, and the watermark attack will cause great visual loss to the image. To this end, we propose DiffWA, a conditional diffusion model with distance guidance for watermark attack, which can restore the image while removing the embedded watermark. The core of our method is training an image-to-image conditional diffusion model on unwatermarked images and guiding the conditional model using a distance guidance when sampling so that the model will generate unwatermarked images which is similar to original images. We conducted experiments on CIFAR-10 using our proposed models. The results shows that the model can remove the watermark with good effect and make the bit error rate of watermark extraction higher than 0.4. At the same time, the attacked image will maintain good visual effect with PSNR more than 31 and SSIM more than 0.97 compared with the original image.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Similar levels of deuteration in the pre-stellar core L1544 and the protostellar core HH211</strong></td>
+<td align="center">K. Giers et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12775v1">2306.12775v1</a></td>
+<td align="center">null</td>
+<td align="center">In the centre of pre-stellar cores, deuterium fractionation is enhanced due to the low temperatures and high densities. Therefore, the chemistry of deuterated molecules can be used to study the earliest stages of star formation. We analyse the deuterium fractionation of simple molecules, comparing the level of deuteration in the envelopes of the pre-stellar core L1544 in Taurus and the protostellar core HH211 in Perseus. We used single-dish observations of CCH, HCN, HNC, HCO$^+$, and their $^{13}$C-, $^{18}$O- and D-bearing isotopologues, detected with the Onsala 20m telescope. We derived the column densities and the deuterium fractions of the molecules. Additionally, we used radiative transfer simulations and results from chemical modelling to reproduce the observed molecular lines. We used new collisional rate coefficients for HNC, HN$^{13}$C, DNC, and DCN that consider the hyperfine structure of these molecules. We find high levels of deuteration for CCH (10%) in both sources, consistent with other carbon chains, and moderate levels for HCN (5-7%) and HNC (8%). The deuterium fraction of HCO$^+$ is enhanced towards HH211, most likely caused by isotope-selective photodissociation of C$^{18}$O. Similar levels of deuteration show that the process is likely equally efficient towards both cores, suggesting that the protostellar envelope still retains the chemical composition of the original pre-stellar core. The fact that the two cores are embedded in different molecular clouds also suggests that environmental conditions do not have a significant effect on the deuteration within dense cores. Radiative transfer modelling shows that it is necessary to include the outer layers of the cores to consider the effects of extended structures. Besides HCO$^+$ observations, HCN observations towards L1544 also require the presence of an outer diffuse layer where the molecules are relatively abundant.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>On the rate of convergence of Yosida approximation for rhe nonlocal Cahn-Hilliard equation</strong></td>
+<td align="center">Piotr Gwiazda et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12772v1">2306.12772v1</a></td>
+<td align="center">null</td>
+<td align="center">It is well-known that one can construct solutions to the nonlocal Cahn-Hilliard equation with singular potentials via Yosida approximation with parameter $\lambda \to 0$. The usual method is based on compactness arguments and does not provide any rate of convergence. Here, we fill the gap and we obtain an explicit convergence rate $\sqrt{\lambda}$. The proof is based on the theory of maximal monotone operators and an observation that the nonlocal operator is of Hilbert-Schmidt type. Our estimate can provide convergence result for the Galerkin methods where the parameter $\lambda$ could be linked to the discretization parameters, yielding appropriate error estimates.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Restoration of the JPEG Maximum Lossy Compressed Face Images with Hourglass Block based on Early Stopping Discriminator</strong></td>
+<td align="center">Jongwook Si et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12757v1">2306.12757v1</a></td>
+<td align="center">null</td>
+<td align="center">When a JPEG image is compressed using the loss compression method with a high compression rate, a blocking phenomenon can occur in the image, making it necessary to restore the image to its original quality. In particular, restoring compressed images that are unrecognizable presents an innovative challenge. Therefore, this paper aims to address the restoration of JPEG images that have suffered significant loss due to maximum compression using a GAN-based net-work method. The generator in this network is based on the U-Net architecture and features a newly presented hourglass structure that can preserve the charac-teristics of deep layers. Additionally, the network incorporates two loss functions, LF Loss and HF Loss, to generate natural and high-performance images. HF Loss uses a pretrained VGG-16 network and is configured using a specific layer that best represents features, which can enhance performance for the high-frequency region. LF Loss, on the other hand, is used to handle the low-frequency region. These two loss functions facilitate the generation of images by the generator that can deceive the discriminator while accurately generating both high and low-frequency regions. The results show that the blocking phe-nomenon in lost compressed images was removed, and recognizable identities were generated. This study represents a significant improvement over previous research in terms of image restoration performance.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>ViCTORIA project: MeerKAT HI observations of the ram pressure stripped galaxy NGC 4523</strong></td>
+<td align="center">A. Boselli et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12751v1">2306.12751v1</a></td>
+<td align="center">null</td>
+<td align="center">We present the first results of a 21 cm HI line pilot observation carried out with MeerKAT in preparation for the ViCTORIA project, an untargeted survey of the Virgo galaxy cluster. The extraordinary quality of the data in terms of sensitivity and angular resolution (rms~0.65 mJy beam^-1 at ~27"x39" and 11 km/s resolution) allowed us to detect an extended (~10 kpc projected length) low column density (N(HI) &lt; 2.5x10^20 cm^-2) HI gas tail associated with the dwarf irregular galaxy NGC4523 at the northern edge of the cluster. The morphology of the tail and of the stellar disc suggest that the galaxy is suffering a hydrodynamic interaction with the surrounding hot intracluster medium (ICM; ram pressure stripping). The orientation of the trailing tail, the gradient in the HI gas column density at the interface between the cold ISM and the hot ICM, the velocity of the galaxy with respect to that of the cluster, and its position indicate that NGC4523 is infalling for the first time into Virgo from the NNW background of the cluster. Using a grid of hydrodynamic simulations we derive the impact parameters with the surrounding ICM, and estimate that the galaxy will be at pericentre (D~500-600 kpc) in ~1 Gyr, where ram pressure stripping will be able to remove most, if not all, of its gas. The galaxy is located on the star formation main sequence when its star formation rate is derived using Halpha images obtained during the VESTIGE survey, suggesting that NGC4523 is only at the beginning of its interaction with the surrounding environment. A few HII regions are detected in the Halpha images within the HI gas tail outside the stellar disc. Their ages, derived by comparing their Halpha, FUV, NUV, and optical colours with the predictions of SED fitting models, are &lt;30 Myr, and suggest that these HII regions have formed within the stripped gas.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Don't be so Monotone: Relaxing Stochastic Line Search in Over-Parameterized Models</strong></td>
+<td align="center">Leonardo Galli et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12747v1">2306.12747v1</a></td>
+<td align="center"><a href="https://github.com/leonardogalli91/ponos">link</a></td>
+<td align="center">Recent works have shown that line search methods can speed up Stochastic Gradient Descent (SGD) and Adam in modern over-parameterized settings. However, existing line searches may take steps that are smaller than necessary since they require a monotone decrease of the (mini-)batch objective function. We explore nonmonotone line search methods to relax this condition and possibly accept larger step sizes. Despite the lack of a monotonic decrease, we prove the same fast rates of convergence as in the monotone case. Our experiments show that nonmonotone methods improve the speed of convergence and generalization properties of SGD/Adam even beyond the previous monotone line searches. We propose a POlyak NOnmonotone Stochastic (PoNoS) method, obtained by combining a nonmonotone line search with a Polyak initial step size. Furthermore, we develop a new resetting technique that in the majority of the iterations reduces the amount of backtracks to zero while still maintaining a large initial step size. To the best of our knowledge, a first runtime comparison shows that the epoch-wise advantage of line-search-based methods gets reflected in the overall computational time.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Rotation Group Synchronization via Quotient Manifold</strong></td>
+<td align="center">Linglingzhi Zhu et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12730v1">2306.12730v1</a></td>
+<td align="center">null</td>
+<td align="center">Rotation group $\mathcal{SO}(d)$ synchronization is an important inverse problem and has attracted intense attention from numerous application fields such as graph realization, computer vision, and robotics. In this paper, we focus on the least-squares estimator of rotation group synchronization with general additive noise models, which is a nonconvex optimization problem with manifold constraints. Unlike the phase/orthogonal group synchronization, there are limited provable approaches for solving rotation group synchronization. First, we derive improved estimation results of the least-squares/spectral estimator, illustrating the tightness and validating the existing relaxation methods of solving rotation group synchronization through the optimum of relaxed orthogonal group version under near-optimal noise level for exact recovery. Moreover, departing from the standard approach of utilizing the geometry of the ambient Euclidean space, we adopt an intrinsic Riemannian approach to study orthogonal/rotation group synchronization. Benefiting from a quotient geometric view, we prove the positive definite condition of quotient Riemannian Hessian around the optimum of orthogonal group synchronization problem, and consequently the Riemannian local error bound property is established to analyze the convergence rate properties of various Riemannian algorithms. As a simple and feasible method, the sequential convergence guarantee of the (quotient) Riemannian gradient method for solving orthogonal/rotation group synchronization problem is studied, and we derive its global linear convergence rate to the optimum with the spectral initialization. All results are deterministic without any probabilistic model.</td>
+</tr>
+<tr>
+<td align="center"><strong>2023-06-22</strong></td>
+<td align="center"><strong>Analysis of divergence-preserving unfitted finite element methods for the mixed Poisson problem</strong></td>
+<td align="center">Christoph Lehrenfeld et.al.</td>
+<td align="center"><a href="http://arxiv.org/abs/2306.12722v1">2306.12722v1</a></td>
+<td align="center">null</td>
+<td align="center">In this paper we present a new H(div)-conforming unfitted finite element method for the mixed Poisson problem which is robust in the cut configuration and preserves conservation properties of body-fitted finite element methods. The key is to formulate the divergence-constraint on the active mesh, instead of the physical domain, in order to obtain robustness with respect to cut configurations without the need for a stabilization that pollutes the mass balance. This change in the formulation results in a slight inconsistency, but does not affect the accuracy of the flux variable. By applying post-processings for the scalar variable, in virtue of classical local post-processings in body-fitted methods, we retain optimal convergence rates for both variables and even the superconvergence after post-processing of the scalar variable. We present the method and perform a rigorous a-priori error analysis of the method and discuss several variants and extensions. Numerical experiments confirm the theoretical results.</td>
+</tr>
+</tbody>
+</table>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      
+    
+  </body>
+</html>
