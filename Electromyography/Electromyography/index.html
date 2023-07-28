@@ -1,0 +1,1317 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Electroencephalography/Electroencephalography/">
+      
+      
+        <link rel="next" href="../../PPG/Photoplethysmography/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>Electromyography - wearable-device-paper-daily</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "hh1oiyc7g7");
+</script>
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#electromyography" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="wearable-device-paper-daily" class="md-header__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wearable-device-paper-daily
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Electromyography
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="wearable-device-paper-daily" class="md-nav__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    wearable-device-paper-daily
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        arxiv-daily latest papers around wearable device arxiv paper daily
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Electroencephalography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Electroencephalography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electroencephalography/Electroencephalography/" class="md-nav__link">
+        Electroencephalography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Electromyography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Electromyography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Electromyography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Electromyography
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#electromyography" class="md-nav__link">
+    Electromyography
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          PPG
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          PPG
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPG/Photoplethysmography/" class="md-nav__link">
+        Photoplethysmography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Actigraphy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Actigraphy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actigraphy/actigraphy/" class="md-nav__link">
+        Actigraphy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          All search terms
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          All search terms
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../all%20search%20terms/all%20search%20terms/" class="md-nav__link">
+        All search terms
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Apple
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Apple
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apple/apple%20watch/" class="md-nav__link">
+        Apple watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Camera
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Camera
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../camera/wearable%20camera/" class="md-nav__link">
+        Wearable camera
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Heart rate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Heart rate
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../heart%20rate/heart%20rate/" class="md-nav__link">
+        Heart rate
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          Huawei
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Huawei
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20band/" class="md-nav__link">
+        Huawei band
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20watch/" class="md-nav__link">
+        Huawei watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          Smart glass
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Smart glass
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20glass/smart%20glass/" class="md-nav__link">
+        Smart glass
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Smart ring
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Smart ring
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20ring/smart%20ring/" class="md-nav__link">
+        Smart ring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Smart watch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Smart watch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20watch/smart%20watch/" class="md-nav__link">
+        Smart watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          Wearable device
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Wearable device
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wearable%20device/wearable%20device/" class="md-nav__link">
+        Wearable device
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#electromyography" class="md-nav__link">
+    Electromyography
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Electromyography</h1>
+
+<h3 id="electromyography">Electromyography</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Publish Date</th>
+<th style="text-align: center;">Title</th>
+<th style="text-align: center;">Authors</th>
+<th style="text-align: center;">PDF</th>
+<th style="text-align: center;">Code</th>
+<th style="text-align: center;">Abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>2023-07-25</strong></td>
+<td style="text-align: center;"><strong>Gait Cycle-Inspired Learning Strategy for Continuous Prediction of Knee Joint Trajectory from sEMG</strong></td>
+<td style="text-align: center;">Xueming Fu et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.13209v1">2307.13209v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Predicting lower limb motion intent is vital for controlling exoskeleton robots and prosthetic limbs. Surface electromyography (sEMG) attracts increasing attention in recent years as it enables ahead-of-time prediction of motion intentions before actual movement. However, the estimation performance of human joint trajectory remains a challenging problem due to the inter- and intra-subject variations. The former is related to physiological differences (such as height and weight) and preferred walking patterns of individuals, while the latter is mainly caused by irregular and gait-irrelevant muscle activity. This paper proposes a model integrating two gait cycle-inspired learning strategies to mitigate the challenge for predicting human knee joint trajectory. The first strategy is to decouple knee joint angles into motion patterns and amplitudes former exhibit low variability while latter show high variability among individuals. By learning through separate network entities, the model manages to capture both the common and personalized gait features. In the second, muscle principal activation masks are extracted from gait cycles in a prolonged walk. These masks are used to filter out components unrelated to walking from raw sEMG and provide auxiliary guidance to capture more gait-related features. Experimental results indicate that our model could predict knee angles with the average root mean square error (RMSE) of 3.03(0.49) degrees and 50ms ahead of time. To our knowledge this is the best performance in relevant literatures that has been reported, with reduced RMSE by at least 9.5%.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-20</strong></td>
+<td style="text-align: center;"><strong>Analysis of the rate of force development reveals high neuromuscular fatigability in elderly patients with chronic kidney disease</strong></td>
+<td style="text-align: center;">Antoine Chatrenet et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.10691v1">2307.10691v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Background Chronic kidney disease (CKD) induces muscle wasting and a reduction in the maximum voluntary force (MVF). Little is known about the neuromuscular fatigability in CKD patients, defined as the reduction of muscle force capacities during exercise. Neuromuscular fatigability is a crucial physical parameter of the daily living. The quantification of explosive force has been shown to be a sensitive means to assess neuromuscular fatigability. Thus, our study used explosive force estimates to assess neuromuscular fatigability in elderly CKD patients. Methods Inclusion criteria for CKD patients were age $\ge$ 60 years old and glomerular filtration rate (GFR) &lt; 45 mL/ min/1.73 m 2 not on dialysis, and those for controls were GFR &gt; 60 mL/min/1.73 m 2 , age and diabetes matched. The fatigability protocol focused on a handgrip task coupled with surface electromyography (sEMG). Scalars were extracted from the rate of force development (RFD): absolute and normalized time periods (50, 75, 100, 150 and 200 ms, RFD 50 , RFD 75 , RFD 100 , RFD 150 and RFD 200 , respectively), peak RFD (RFD peak in absolute; NRFD peak normalized), timeto-peak RFD (t-RFD peak) and the relative force at RFD peak (MVF-RFD peak). A statistical parametric mapping approach was performed on the force, impulse and RFD-time curves. The integrated sEMG with time at 0-30, 0-50, 0-100 and 0-200 ms time intervals relative to onset of sEMG activity was extracted and groups were compared separately for each sex. Results The cohort of 159 individuals had a median age of 69 (9 IQR) years and body mass index was 27.6 (6.2 IQR) kg/ m 2. Propensity-score-matched groups balanced CKD patients and controls by gender with 66 males and 34 females. In scalar analysis, CKD patients manifested a higher decrement than controls in the early phase of contraction, regarding the NRFD peak (P = 0.009; $\eta$ 2 p = 0.034) and RFD 75 and RFD 100 (for both P &lt; 0.001; $\eta$ 2 p = 0.068 and 0.064). The onedimensional analysis confirmed that CKD males manifest higher and delayed neuromuscular fatigability, especially before 100 ms from onset of contraction. sEMG was lower in CKD patients than controls in the 0-100 ms (at rest: P = 0.049, Cohen's d = 0.458) and 0-200 ms (at rest: P = 0.016, Cohen's d = 0.496; during exercise: P = 0.006, Cohen's d = 0.421) time windows. Controls showed greater decrease of sEMG than CKD patients in the 0-30 ms (P = 0.020, Cohen's d = 0.533) and 0-50 ms (P = 0.010, Cohen's d = 0.640) time windows. As opposite to females, males showed almost the same differences between groups. Conclusions Our study is the first to show that CKD patients have higher fatigability than controls, which may be associated with an impaired motor-unit recruitment, highlighting a neural drive disturbance with CKD. Further studies are needed to confirm these findings.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-13</strong></td>
+<td style="text-align: center;"><strong>Combining Vision and EMG-Based Hand Tracking for Extended Reality Musical Instruments</strong></td>
+<td style="text-align: center;">Max Graf et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.10203v1">2307.10203v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Hand tracking is a critical component of natural user interactions in extended reality (XR) environments, including extended reality musical instruments (XRMIs). However, self-occlusion remains a significant challenge for vision-based hand tracking systems, leading to inaccurate results and degraded user experiences. In this paper, we propose a multimodal hand tracking system that combines vision-based hand tracking with surface electromyography (sEMG) data for finger joint angle estimation. We validate the effectiveness of our system through a series of hand pose tasks designed to cover a wide range of gestures, including those prone to self-occlusion. By comparing the performance of our multimodal system to a baseline vision-based tracking method, we demonstrate that our multimodal approach significantly improves tracking accuracy for several finger joints prone to self-occlusion. These findings suggest that our system has the potential to enhance XR experiences by providing more accurate and robust hand tracking, even in the presence of self-occlusion.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-08</strong></td>
+<td style="text-align: center;"><strong>A Physics-Informed Low-Shot Learning For sEMG-Based Estimation of Muscle Force and Joint Kinematics</strong></td>
+<td style="text-align: center;">Yue Shi et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.05361v1">2307.05361v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Muscle force and joint kinematics estimation from surface electromyography (sEMG) are essential for real-time biomechanical analysis of the dynamic interplay among neural muscle stimulation, muscle dynamics, and kinetics. Recent advances in deep neural networks (DNNs) have shown the potential to improve biomechanical analysis in a fully automated and reproducible manner. However, the small sample nature and physical interpretability of biomechanical analysis limit the applications of DNNs. This paper presents a novel physics-informed low-shot learning method for sEMG-based estimation of muscle force and joint kinematics. This method seamlessly integrates Lagrange's equation of motion and inverse dynamic muscle model into the generative adversarial network (GAN) framework for structured feature decoding and extrapolated estimation from the small sample data. Specifically, Lagrange's equation of motion is introduced into the generative model to restrain the structured decoding of the high-level features following the laws of physics. And a physics-informed policy gradient is designed to improve the adversarial learning efficiency by rewarding the consistent physical representation of the extrapolated estimations and the physical references. Experimental validations are conducted on two scenarios (i.e. the walking trials and wrist motion trials). Results indicate that the estimations of the muscle forces and joint kinematics are unbiased compared to the physics-based inverse dynamics, which outperforms the selected benchmark methods, including physics-informed convolution neural network (PI-CNN), vallina generative adversarial network (GAN), and multi-layer extreme learning machine (ML-ELM).</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-07</strong></td>
+<td style="text-align: center;"><strong>An Improved Compound Gaussian Model for Bivariate Surface EMG Signals Related to Strength Training</strong></td>
+<td style="text-align: center;">Durgesh Kusuru et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.03403v1">2307.03403v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Recent literature suggests that the surface electromyography (sEMG) signals have non-stationary statistical characteristics specifically due to random nature of the covariance. Thus suitability of a statistical model for sEMG signals is determined by the choice of an appropriate model for describing the covariance. The purpose of this study is to propose a Compound-Gaussian (CG) model for multivariate sEMG signals in which latent variable of covariance is modeled as a random variable that follows an exponential model. The parameters of the model are estimated using the iterative Expectation Maximization (EM) algorithm. Further, a new dataset, electromyography analysis of human activities database 2 (EMAHA-DB2) is developed. Based on the model fitting analysis on the sEMG signals from EMAHA-DB2, it is found that the proposed CG model fits more closely to the empirical pdf of sEMG signals than the existing models. The proposed model is validated by visual inspection, further validated by matching central moments and better quantitative metrics in comparison with other models. The proposed compound model provides an improved fit to the statistical behavior of sEMG signals. Further, the estimate of rate parameter of the exponential model shows clear relation to the training weights. Finally, the average signal power estimates of the channels shows distinctive dependency on the training weights, the subject's training experience and the type of activity.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-29</strong></td>
+<td style="text-align: center;"><strong>Labour Monitoring in Pregnant Women Using Phonocardiography, Electrocardiography and Electromyography Technique</strong></td>
+<td style="text-align: center;">Anushka Tiwari et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.17198v1">2306.17198v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Continuous monitoring of fetal and maternal vital signs, particularly during labor, can be critical for the child and mother's health. We present a novel wearable electronic system that measures, in real-time, maternal heart rate using phonocardiography (PCG) and Electrocardiography (ECG). Uterine contractions using electromyography (EMG). When in later stages we employed ECG technique for maternal heart rate monitoring. The heart rate is determined using moving average filters to remove noises in the signal and ACF(Autocorrelation Function) for determining periodicity. For UC monitoring we stick to the same EMG technique. We also tried employing EMG technique to monitor the Fetal Heart Rate(FHR). But, in later stages of this design, this idea was aborted as we concluded that it needs further research on pregnancy stages and would require more intricate sensor integration that might not be in our reach at the moment. The system is accurate, low-cost, and portable, so it can be deployed at primary healthcare centers in low-income countries. The system can also be used by women in the comfort of their homes. At the same time, the data collected is transferred to their doctor for analysis and diagnosis, which can bring a revolutionary change in the continuous monitoring of fetal wellbeing during labor.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-22</strong></td>
+<td style="text-align: center;"><strong>Influence of Force-Length Relationship and Task-Specific Constraints on Finger Force-Generating Capacities</strong></td>
+<td style="text-align: center;">Benjamin Goislard de Monsabert et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.12842v1">2306.12842v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Grip strength loss in extended and flexed wrist postures has been explained by reduced force-generating capacities of extrinsic finger flexor resulting from non-optimal length, owing to the force-length relationship. Recent works suggested that other muscles, especially wrist extensors, participate in this grip strength loss. The objective of this study was to clarify the role of the force-length relationship in finger force production. 18 participants performed maximal isometric finger force production during pinch grip (Pinch) and four-finger pressing (Press) tasks in four different wrist postures (extended, flexed, neutral, spontaneous). The maximum finger force (MFF), finger and wrist joint angles, as well as activation of four muscles were determined using dynamometry, motion capture, and electromyography. The force and length of the four muscles were estimated from joint angles and muscle activation using a musculoskeletal model. MFF decreased for flexed wrist during Pinch but remained stable across wrist postures during Press. The results suggested that the loss of pinch grip force in deviated wrist posture is partially related to force-length relationship of finger extensors. In opposition, MFF during Press was not influenced by the modulation of muscle capacities but was probably first limited by mechanical and neural factors related to finger interdependence</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-28</strong></td>
+<td style="text-align: center;"><strong>Multi-Modal Wireless Flexible Gel-Free Sensors with Edge Deep Learning for Detecting and Alerting Freezing of Gait in Parkinson's Patients</strong></td>
+<td style="text-align: center;">Yuhan Hou et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.17629v1">2305.17629v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Freezing of gait (FoG) is a debilitating symptom of Parkinson's disease (PD). This work develops flexible wearable sensors that can detect FoG and alert patients and companions to help prevent falls. FoG is detected on the sensors using a deep learning (DL) model with multi-modal sensory inputs collected from distributed wireless sensors. Two types of wireless sensors are developed, including: (1) a C-shape central node placed around the patient's ears, which collects electroencephalogram (EEG), detects FoG using an on-device DL model, and generates auditory alerts when FoG is detected; (2) a stretchable patch-type sensor attached to the patient's legs, which collects electromyography (EMG) and movement information from accelerometers. The patch-type sensors wirelessly send collected data to the central node through low-power ultra-wideband (UWB) transceivers. All sensors are fabricated on flexible printed circuit boards. Adhesive gel-free acetylene carbon black and polydimethylsiloxane electrodes are fabricated on the flexible substrate to allow conformal wear over the long term. Custom integrated circuits (IC) are developed in 180 nm CMOS technology and used in both types of sensors for signal acquisition, digitization, and wireless communication. A novel lightweight DL model is trained using multi-modal sensory data. The inference of the DL model is performed on a low-power microcontroller in the central node. The DL model achieves a high detection sensitivity of 0.81 and a specificity of 0.88. The developed wearable sensors are ready for clinical experiments and hold great promise in improving the quality of life of patients with PD. The proposed design methodologies can be used in wearable medical devices for the monitoring and treatment of a wide range of neurodegenerative diseases.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-26</strong></td>
+<td style="text-align: center;"><strong>A Multi-Resolution Physics-Informed Recurrent Neural Network: Formulation and Application to Musculoskeletal Systems</strong></td>
+<td style="text-align: center;">Karan Taneja et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.16593v1">2305.16593v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">This work presents a multi-resolution physics-informed recurrent neural network (MR PI-RNN), for simultaneous prediction of musculoskeletal (MSK) motion and parameter identification of the MSK systems. The MSK application was selected as the model problem due to its challenging nature in mapping the high-frequency surface electromyography (sEMG) signals to the low-frequency body joint motion controlled by the MSK and muscle contraction dynamics. The proposed method utilizes the fast wavelet transform to decompose the mixed frequency input sEMG and output joint motion signals into nested multi-resolution signals. The prediction model is subsequently trained on coarser-scale input-output signals using a gated recurrent unit (GRU), and then the trained parameters are transferred to the next level of training with finer-scale signals. These training processes are repeated recursively under a transfer-learning fashion until the full-scale training (i.e., with unfiltered signals) is achieved, while satisfying the underlying dynamic equilibrium. Numerical examples on recorded subject data demonstrate the effectiveness of the proposed framework in generating a physics-informed forward-dynamics surrogate, which yields higher accuracy in motion predictions of elbow flexion-extension of an MSK system compared to the case with single-scale training. The framework is also capable of identifying muscle parameters that are physiologically consistent with the subject's kinematics data.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-18</strong></td>
+<td style="text-align: center;"><strong>Adaptive Learning based Upper-Limb Rehabilitation Training System with Collaborative Robot</strong></td>
+<td style="text-align: center;">Jun Hong Lim et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.10642v2">2305.10642v2</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Rehabilitation training for patients with motor disabilities usually requires specialized devices in rehabilitation centers. Home-based multi-purpose training would significantly increase treatment accessibility and reduce medical costs. While it is unlikely to equip a set of rehabilitation robots at home, we investigate the feasibility to use the general-purpose collaborative robot for rehabilitation therapies. In this work, we developed a new system for multi-purpose upper-limb rehabilitation training using a generic robot arm with human motor feedback and preference. We integrated surface electromyography, force/torque sensors, RGB-D cameras, and robot controllers with the Robot Operating System to enable sensing, communication, and control of the system. Imitation learning methods were adopted to imitate expert-provided training trajectories which could adapt to subject capabilities to facilitate in-home training. Our rehabilitation system is able to perform gross motor function and fine motor skill training with a gripper-based end-effector. We simulated system control in Gazebo and training effects (muscle activation level) in OpenSim and evaluated its real performance with human subjects. For all the subjects enrolled, our system achieved better training outcomes compared to specialist-assisted rehabilitation under the same conditions. Our work demonstrates the potential of utilizing collaborative robots for in-home motor rehabilitation training.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-06</strong></td>
+<td style="text-align: center;"><strong>Electromyography Signal Classification Using Deep Learning</strong></td>
+<td style="text-align: center;">Mekia Shigute Gaso et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.04006v1">2305.04006v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">We have implemented a deep learning model with L2 regularization and trained it on Electromyography (EMG) data. The data comprises of EMG signals collected from control group, myopathy and ALS patients. Our proposed deep neural network consists of eight layers; five fully connected, two batch normalization and one dropout layers. The data is divided into training and testing sections by subsequently dividing the training data into sub-training and validation sections. Having implemented this model, an accuracy of 99 percent is achieved on the test data set. The model was able to distinguishes the normal cases (control group) from the others at a precision of 100 percent and classify the myopathy and ALS with high accuracy of 97.4 and 98.2 percents, respectively. Thus we believe that, this highly improved classification accuracies will be beneficial for their use in the clinical diagnosis of neuromuscular disorders.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-08</strong></td>
+<td style="text-align: center;"><strong>Overview of processing techniques for surface electromyography signals</strong></td>
+<td style="text-align: center;">Alejandra Manjarres-Triana et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.04098v1">2304.04098v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Surface electromyography (sEMG) is a technology to assess muscle activation, which is an important component in applications related to diagnosis, treatment, progression assessment, and rehabilitation of specific individuals' conditions. Recently, sEMG potential has been shown, since it can be used in a non-invasive manner; nevertheless, it requires careful signal analysis to support health professionals reliably. This paper briefly described the basic concepts involved in the sEMG, such as the physiology of the muscles, the data acquisition, the signal processing techniques, and classification methods that may be used to identify disorders or signs of abnormalities according to muscular patterns. Specifically, classification methods encompass digital signal processing techniques and machine learning with high potential in the field. We hope that this work serves as an introduction to researchers interested in this field.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-02</strong></td>
+<td style="text-align: center;"><strong>A Framework and Call to Action for the Future Development of EMG-Based Input in HCI</strong></td>
+<td style="text-align: center;">Ethan Eddy et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.00582v1">2304.00582v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Electromyography (EMG) has been explored as an HCI input modality following a long history of success for prosthesis control. While EMG has the potential to address a range of hands-free interaction needs, it has yet to be widely accepted outside of prosthetics due to a perceived lack of robustness and intuitiveness. To understand how EMG input systems can be better designed, we sampled the ACM digital library to identify limitations in the approaches taken. Leveraging these works in combination with our research group's extensive interdisciplinary experience in this field, four themes emerged (1) interaction design, (2) model design, (3) system evaluation, and (4) reproducibility. Using these themes, we provide a step-by-step framework for designing EMG-based input systems to strengthen the foundation on which EMG-based interactions are built. Additionally, we provide a call-to-action for researchers to unlock the hidden potential of EMG as a widely applicable and highly usable input modality.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-03-13</strong></td>
+<td style="text-align: center;"><strong>Discriminative sEMG-based features to assess damping ability and interpret activation patterns in lower-limb muscles of ACLR athletes</strong></td>
+<td style="text-align: center;">Mehran Hatamzadeh et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2303.06954v1">2303.06954v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Objective: The main goal of the athletes who undergo anterior cruciate ligament reconstruction (ACLR) surgery is a successful return-to-sport. At this stage, identifying muscular deficits becomes important. Hence, in this study, three discriminative features based on surface electromyographic signals (sEMG) acquired in a dynamic protocol are introduced to assess the damping ability and interpret activation patterns in lower-limb muscles of ACLR athletes. Methods: The features include the median frequency of the power spectrum density (PSD), the relative percentage of the equivalent damping or equivalent stiffness derived from the median frequency, and the energy of the signals in the time-frequency plane of the pseudo-Wigner-Ville distribution (PWVD). To evaluate the features, 11 healthy and 11 ACLR athletes (6 months post-reconstruction surgery) were recruited to acquire the sEMG signals from the medial and the lateral parts of the hamstrings, quadriceps, and gastrocnemius muscles in pre- and post-fatigue single-leg landings. Results: A significant damping deficiency is observed in the hamstring muscles of ACLR athletes by evaluating the proposed features. This deficiency indicates that more attention should be paid to this muscle of ACLR athletes in pre-return-to-sport rehabilitations. Conclusion: The quality of electromyography-based pre-return-to-sport assessments on ACLR subjects depends on the sEMG acquisition protocol, as well as the type and nature of the extracted features. Hence, combinatorial application of both energy-based features (derived from the PWVD) and power-based features (derived from the PSD) could facilitate the assessment process by providing additional biomechanical information regarding the behavior of the muscles surrounding the knee.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-03-11</strong></td>
+<td style="text-align: center;"><strong>AI-Enhanced Intensive Care Unit: Revolutionizing Patient Care with Pervasive Sensing</strong></td>
+<td style="text-align: center;">Subhash Nerella et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2303.06252v1">2303.06252v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The intensive care unit (ICU) is a specialized hospital space where critically ill patients receive intensive care and monitoring. Comprehensive monitoring is imperative in assessing patients conditions, in particular acuity, and ultimately the quality of care. However, the extent of patient monitoring in the ICU is limited due to time constraints and the workload on healthcare providers. Currently, visual assessments for acuity, including fine details such as facial expressions, posture, and mobility, are sporadically captured, or not captured at all. These manual observations are subjective to the individual, prone to documentation errors, and overburden care providers with the additional workload. Artificial Intelligence (AI) enabled systems has the potential to augment the patient visual monitoring and assessment due to their exceptional learning capabilities. Such systems require robust annotated data to train. To this end, we have developed pervasive sensing and data processing system which collects data from multiple modalities depth images, color RGB images, accelerometry, electromyography, sound pressure, and light levels in ICU for developing intelligent monitoring systems for continuous and granular acuity, delirium risk, pain, and mobility assessment. This paper presents the Intelligent Intensive Care Unit (I2CU) system architecture we developed for real-time patient monitoring and visual assessment.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-02-19</strong></td>
+<td style="text-align: center;"><strong>Estimation and Early Prediction of Grip Force Based on sEMG Signals and Deep Recurrent Neural Networks</strong></td>
+<td style="text-align: center;">Atusa Ghorbani et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2302.09555v1">2302.09555v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Hands are used for communicating with the surrounding environment and have a complex structure that enables them to perform various tasks with their multiple degrees of freedom. Hand amputation can prevent a person from performing their daily activities. In that event, finding a suitable, fast, and reliable alternative for the missing limb can affect the lives of people who suffer from such conditions. As the most important use of the hands is to grasp objects, the purpose of this study is to accurately predict gripping force from surface electromyography (sEMG) signals during a pinch-type grip. In that regard, gripping force and sEMG signals are derived from 10 healthy subjects. Results show that for this task, recurrent networks outperform nonrecurrent ones, such as a fully connected multilayer perceptron (MLP) network. Gated recurrent unit (GRU) and long short-term memory (LSTM) networks can predict the gripping force with R-squared values of 0.994 and 0.992, respectively, and a prediction rate of over 1300 predictions per second. The predominant advantage of using such frameworks is that the gripping force can be predicted straight from preprocessed sEMG signals without any form of feature extraction, not to mention the ability to predict future force values using larger prediction horizons adequately. The methods presented in this study can be used in the myoelectric control of prosthetic hands or robotic grippers.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-02-17</strong></td>
+<td style="text-align: center;"><strong>Sleep Model -- A Sequence Model for Predicting the Next Sleep Stage</strong></td>
+<td style="text-align: center;">Iksoo Choi et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2302.12709v1">2302.12709v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">As sleep disorders are becoming more prevalent there is an urgent need to classify sleep stages in a less disturbing way.In particular, sleep-stage classification using simple sensors, such as single-channel electroencephalography (EEG), electrooculography (EOG), electromyography (EMG), or electrocardiography (ECG) has gained substantial interest. In this study, we proposed a sleep model that predicts the next sleep stage and used it to improve sleep classification accuracy. The sleep models were built using sleep-sequence data and employed either statistical $n$-gram or deep neural network-based models. We developed beam-search decoding to combine the information from the sensor and the sleep models. Furthermore, we evaluated the performance of the $n$-gram and long short-term memory (LSTM) recurrent neural network (RNN)-based sleep models and demonstrated the improvement of sleep-stage classification using an EOG sensor. The developed sleep models significantly improved the accuracy of sleep-stage classification, particularly in the absence of an EEG sensor.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-02-15</strong></td>
+<td style="text-align: center;"><strong>Automated Movement Detection with Dirichlet Process Mixture Models and Electromyography</strong></td>
+<td style="text-align: center;">Navin Cooray et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2302.07509v1">2302.07509v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Numerous sleep disorders are characterised by movement during sleep, these include rapid-eye movement sleep behaviour disorder (RBD) and periodic limb movement disorder. The process of diagnosing movement related sleep disorders requires laborious and time-consuming visual analysis of sleep recordings. This process involves sleep clinicians visually inspecting electromyogram (EMG) signals to identify abnormal movements. The distribution of characteristics that represent movement can be diverse and varied, ranging from brief moments of tensing to violent outbursts. This study proposes a framework for automated limb-movement detection by fusing data from two EMG sensors (from the left and right limb) through a Dirichlet process mixture model. Several features are extracted from 10 second mini-epochs, where each mini-epoch has been classified as 'leg-movement' or 'no leg-movement' based on annotations of movement from sleep clinicians. The distributions of the features from each category can be estimated accurately using Gaussian mixture models with the Dirichlet process as a prior. The available dataset includes 36 participants that have all been diagnosed with RBD. The performance of this framework was evaluated by a 10-fold cross validation scheme (participant independent). The study was compared to a random forest model and outperformed it with a mean accuracy, sensitivity, and specificity of 94\%, 48\%, and 95\%, respectively. These results demonstrate the ability of this framework to automate the detection of limb movement for the potential application of assisting clinical diagnosis and decision-making.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-02-08</strong></td>
+<td style="text-align: center;"><strong>Simplified markerless stride detection pipeline (sMaSDP) for surface EMG segmentation</strong></td>
+<td style="text-align: center;">Rafael Castro Aguiar et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2302.04243v1">2302.04243v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">People with mobility impairments are often recommended for gait assessment studies to diagnose their condition and to select appropriate physiotherapy to improve their mobility. These studies are often conducted in clinical or lab settings, where subjects are assessed in a foreign environment, which may influence their motivation, coordination and overall mobility. Alternatively, if the subject's gait could be assessed in their daily-lives, in unconstrained settings, a more naturalistic gait assessment could be performed. Kinematic analysis of a gait pattern on its own may not be sufficient to characterise a subject's mobility. To better diagnose gait deficiencies, analysis of the patient's muscle activity should be conducted as well. To do so, gait studies should collect, synchronously, Electromyography (EMG) and kinematic data. This method introduces a simplified markerless gait event detection pipeline for the segmentation of EMG signals, via synchronously recorded Inertial Measurement Unit (IMU) data. In an unconstrained walking experiment, healthy subjects walk through a designed course with their kinematic and EMG data recorded. This course comprises 5 different walking modalities (level walking, ramp up/down, staircase up/down), mimicking everyday walking. Through timepoint matching, segmentation and filtering, we generate an algorithm that detects heel-strike (HS) events using a single IMU, and isolates EMG activity of gait cycles, in the different walking modalities. This gait event detection algorithm can be adapted to different datasets, and was tested in both healthy and Parkinson's Disease (PD) gait. Results demonstrate the extracted muscle activity levels in a healthy subject's level ground walking, and the extracted HS events of a PD patient. Adjustments to algorithm parameters are possible (e.g., expected velocity, cadence) and can further increase the detection accuracy.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-02-01</strong></td>
+<td style="text-align: center;"><strong>Upper-limb Geometric MyoPassivity Map for Physical Human-Robot Interaction</strong></td>
+<td style="text-align: center;">Xingyuan Zhou et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2302.00495v1">2302.00495v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The intrinsic biomechanical characteristic of the human upper limb plays a central role in absorbing the interactive energy during physical human-robot interaction (pHRI). We have recently shown that based on the concept of ``Excess of Passivity (EoP)," from nonlinear control theory, it is possible to decode such energetic behavior for both upper and lower limbs. The extracted knowledge can be used in the design of controllers for optimizing the transparency and fidelity of force fields in human-robot interaction and in haptic systems. In this paper, for the first time, we investigate the frequency behavior of the passivity map for the upper limb when the muscle co-activation was controlled in real-time through visual electromyographic feedback. Five healthy subjects (age: 27 +/- 5) were included in this study. The energetic behavior was evaluated at two stimulation frequencies at eight interaction directions over two controlled muscle co-activation levels. Electromyography (EMG) was captured using the Delsys Wireless Trigno system. Results showed a correlation between EMG and EoP, which was further altered by increasing the frequency. The proposed energetic behavior is named the Geometric MyoPassivity (GMP) map. The findings indicate that the GMP map has the potential to be used in real-time to quantify the absorbable energy, thus passivity margin of stability for upper limb interaction during pHRI.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-01-31</strong></td>
+<td style="text-align: center;"><strong>A Prototype System for High Frame Rate Ultrasound Imaging based Prosthetic Arm Control</strong></td>
+<td style="text-align: center;">Ayush Singh et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2301.13809v3">2301.13809v3</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The creation of unique control methods for a hand prosthesis is still a problem that has to be addressed. The best choice of a human-machine interface (HMI) that should be used to enable natural control is still a challenge. Surface electromyography (sEMG), the most popular option, has a variety of difficult-to-fix issues (electrode displacement, sweat, fatigue). The ultrasound imaging-based methodology offers a means of recognising complex muscle activity and configuration with a greater SNR and less hardware requirements as compared to sEMG. In this study, a prototype system for high frame rate ultrasound imaging for prosthetic arm control is proposed. Using the proposed framework, a virtual robotic hand simulation is developed that can mimic a human hand as illustrated in the link [10]. The proposed classification model simulating four hand gestures has a classification accuracy of more than 90%.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-01-23</strong></td>
+<td style="text-align: center;"><strong>Long-term stable Electromyography classification using Canonical Correlation Analysis</strong></td>
+<td style="text-align: center;">Elisa Donati et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2301.09729v1">2301.09729v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Discrimination of hand gestures based on the decoding of surface electromyography (sEMG) signals is a well-establish approach for controlling prosthetic devices and for Human-Machine Interfaces (HMI). However, despite the promising results achieved by this approach in well-controlled experimental conditions, its deployment in long-term real-world application scenarios is still hindered by several challenges. One of the most critical challenges is maintaining high EMG data classification performance across multiple days without retraining the decoding system. The drop in performance is mostly due to the high EMG variability caused by electrodes shift, muscle artifacts, fatigue, user adaptation, or skin-electrode interfacing issues. Here we propose a novel statistical method based on canonical correlation analysis (CCA) that stabilizes EMG classification performance across multiple days for long-term control of prosthetic devices. We show how CCA can dramatically decrease the performance drop of standard classifiers observed across days, by maximizing the correlation among multiple-day acquisition data sets. Our results show how the performance of a classifier trained on EMG data acquired only of the first day of the experiment maintains 90% relative accuracy across multiple days, compensating for the EMG data variability that occurs over long-term periods, using the CCA transformation on data obtained from a small number of gestures. This approach eliminates the need for large data sets and multiple or periodic training sessions, which currently hamper the usability of conventional pattern recognition based approaches</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-01-23</strong></td>
+<td style="text-align: center;"><strong>High-density magnetomyography is superior to high-density surface electromyography for motor unit decomposition: a simulation study</strong></td>
+<td style="text-align: center;">Thomas Klotz et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2301.09494v2">2301.09494v2</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Objective: Studying motor units (MUs) is essential for understanding motor control, the detection of neuromuscular disorders and the control of human-machine interfaces. Individual motor unit firings are currently identified in vivo by decomposing electromyographic (EMG) signals. Due to our body's properties and anatomy, individual motor units can only be separated to a limited extent with surface EMG. Unlike electrical signals, magnetic fields do not interact with human tissues. This physical property and the emerging technology of quantum sensors make magnetomyography (MMG) a highly promising methodology. However, the full potential of MMG to study neuromuscular physiology has not yet been explored. Approach: In this work, we perform in silico trials that combine a biophysical model of EMG and MMG with state-of-the-art algorithms for the decomposition of motor units. This allows the prediction of an upper-bound for the motor unit decomposition accuracy. Main results: It is shown that non-invasive high-density MMG data is superior over comparable high-density surface EMG data for the robust identification of the discharge patterns of individual motor units. Decomposing MMG instead of EMG increased the number of identifiable motor units by 76%. Notably, MMG exhibits a less pronounced bias to detect superficial motor units. Significance: The presented simulations provide insights into methods to study the neuromuscular system non-invasively and in vivo that would not be easily feasible by other means. Hence, this study provides guidance for the development of novel biomedical technologies.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-01-13</strong></td>
+<td style="text-align: center;"><strong>Analysis of LGM Model for sEMG Signals related to Weight Training</strong></td>
+<td style="text-align: center;">Durgesh Kusuru et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2301.05417v1">2301.05417v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Statistical models of Surface electromyography (sEMG) signals have several applications such as better understanding of sEMG signal generation, improved pattern recognition based control of wearable exoskeletons and prostheses, improving training strategies in sports activities, and EMG simulation studies. Most of the existing studies analysed the statistical model of sEMG signals acquired under isometric contractions. However, there is no study that addresses the statistical model under isotonic contractions. In this work, a new dataset, electromyography analysis of human activities - database 2 (EMAHA-DB2) is developed. It consists of two experiments based on both isometric and isotonic activities during weight training. Previously, a novel Laplacian-Gaussian Mixture (LGM) model was demonstrated for a few benchmark datasets consisting of basic movements and gestures. In this work, the model suitability analysis is extended to the EMAHA-DB2 dataset. Further, the LGM model is compared with three existing statistical models including the recent scale-mixture model. According to qualitative and quantitative analyses, the LGM model has a better fit to the empirical pdf of the recorded sEMG signals compared with the scale mixture model and the other standard models. The variance and mixing weight of the Laplacian component of the signal are analyzed with respect to the type of muscle, type of muscle contraction, dumb-bell weight and training experience of the subjects. The sEMG variance (the Laplacian component) increases with respect to the weights, is greater for isotonic activity especially for the biceps. For isotonic activity, the signal variance increases with training experience. Importantly, the ratio of the variances from the two muscle sites is observed to be nearly independent of the lifted weight and consistently increases with the training experience.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-01-09</strong></td>
+<td style="text-align: center;"><strong>EMAHA-DB1: A New Upper Limb sEMG Dataset for Classification of Activities of Daily Living</strong></td>
+<td style="text-align: center;">Naveen Kumar Karnam et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2301.03325v1">2301.03325v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">In this paper, we present electromyography analysis of human activity - database 1 (EMAHA-DB1), a novel dataset of multi-channel surface electromyography (sEMG) signals to evaluate the activities of daily living (ADL). The dataset is acquired from 25 able-bodied subjects while performing 22 activities categorised according to functional arm activity behavioral system (FAABOS) (3 - full hand gestures, 6 - open/close office draw, 8 - grasping and holding of small office objects, 2 - flexion and extension of finger movements, 2 - writing and 1 - rest). The sEMG data is measured by a set of five Noraxon Ultium wireless sEMG sensors with Ag/Agcl electrodes placed on a human hand. The dataset is analyzed for hand activity recognition classification performance. The classification is performed using four state-ofthe-art machine learning classifiers, including Random Forest (RF), Fine K-Nearest Neighbour (KNN), Ensemble KNN (sKNN) and Support Vector Machine (SVM) with seven combinations of time domain and frequency domain feature sets. The state-of-theart classification accuracy on five FAABOS categories is 83:21% by using the SVM classifier with the third order polynomial kernel using energy feature and auto regressive feature set ensemble. The classification accuracy on 22 class hand activities is 75:39% by the same SVM classifier with the log moments in frequency domain (LMF) feature, modified LMF, time domain statistical (TDS) feature, spectral band powers (SBP), channel cross correlation and local binary patterns (LBP) set ensemble. The analysis depicts the technical challenges addressed by the dataset. The developed dataset can be used as a benchmark for various classification methods as well as for sEMG signal analysis corresponding to ADL and for the development of prosthetics and other wearable robotics.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-01-04</strong></td>
+<td style="text-align: center;"><strong>A Novel Power-optimized CMOS sEMG Device with Ultra Low-noise integrated with ConvNet (VGG16) for Biomedical Applications</strong></td>
+<td style="text-align: center;">Ahmed Ayman - Mohamed Sabry et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2301.09570v2">2301.09570v2</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The needle bio-potential sensors for measuring muscle and brain activity need invasive surgical targeted muscle reinnervation (TMR) and a demanding process to maintain, but surface bio-potential sensors lack clear bio-signal reading (Signal-Interference). In this research, a novel power-optimized complementary metal-oxide-semiconductor (CMOS) Surface Electromyography (sEMG) is developed to improve the efficiency and quality of captured bio-signal for biomedical application: The early diagnosis of neurological disorders (Dystonia) and a novel compatible mind-controlled prosthetic leg with human daily activities. A novel sEMG composed of CMOS Op-Amp based PIC16F877A 8-bit CMOS Flash-based Microcontroller is utilized to minimize power consumption and data processing time. sEMG Circuit is implemented with developed analog filter along with infinite impulse response (IIR) digital filter via Fast Fourier Transform (FFT), Z-transform, and difference equations. The analysis shows a significant improvement of 169.2% noise-reduction in recorded EMG signal using developed digital filter compared to analog one according to numerical root mean square error (RMSE). Moreover, digital IIR was tested in two stages: algorithmic and real-world. As a result, IIR's algorithmic (MATLAB) and real-world RMSEs were 0.03616 and 0.05224, respectively. A notable advancement of 20.8% in data processing duration in EMG signal analysis. Optimizing VGG, AlexNet, and ResNet ConvNet as trained and tested on 15 public EEG (62-electrode) and 18 subjects' observed EMG data. The results indicate that VGG16-1D is 98.43% higher. During real testing, the accuracy was 95.8 +/- 4.6% for 16 subjects (6 Amputees-10 Dystonia). This study demonstrates the potential for sEMG, paving the way for biomedical applications.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-01-03</strong></td>
+<td style="text-align: center;"><strong>A Laplacian Gaussian Mixture Model for Surface EMG Signals of Human Arm Activity</strong></td>
+<td style="text-align: center;">Durgesh Kusuru et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2301.01080v1">2301.01080v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The probability density function (pdf) of surface Electromyography (sEMG) signals follows any one of the standalone standard distributions: the Gaussian or the Laplacian. Further, the choice of the model is dependent on muscle contraction force (MCF) levels. Hence, a unified model is proposed which explains the statistical nature of sEMG signals at different MCF levels. In this paper, we propose the Laplacian Gaussian Mixture (LGM) model for the signals recorded from upper limbs. This model is able to explain the sEMG signals from different activities corresponding to different MCF levels. The model is tested on different bench-mark sEMG data sets and is validated using both the qualitative and quantitative perspectives. It is determined that for low and medium contraction force levels the proposed mixture model is more accurate than both the Laplacian and the Gaussian models. Whereas for high contraction force level, the LGM model behaves as a Gaussian model. The mixing weights of the LGM model are analyzed and it is observed that for low and medium MCF levels both the mixing weights of LGM model do contribute. Whereas for high contraction force levels the Laplacian weight becomes weaker. The proposed LGM model for sEMG signals from upper limbs explains sEMG signals at different MCF levels. The proposed model helps in improved understanding of statistical nature of sEMG signals and better feature representation in the classification problems.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2022-12-28</strong></td>
+<td style="text-align: center;"><strong>Joint Action is a Framework for Understanding Partnerships Between Humans and Upper Limb Prostheses</strong></td>
+<td style="text-align: center;">Michael R. Dawson et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2212.14124v1">2212.14124v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Recent advances in upper limb prostheses have led to significant improvements in the number of movements provided by the robotic limb. However, the method for controlling multiple degrees of freedom via user-generated signals remains challenging. To address this issue, various machine learning controllers have been developed to better predict movement intent. As these controllers become more intelligent and take on more autonomy in the system, the traditional approach of representing the human-machine interface as a human controlling a tool becomes limiting. One possible approach to improve the understanding of these interfaces is to model them as collaborative, multi-agent systems through the lens of joint action. The field of joint action has been commonly applied to two human partners who are trying to work jointly together to achieve a task, such as singing or moving a table together, by effecting coordinated change in their shared environment. In this work, we compare different prosthesis controllers (proportional electromyography with sequential switching, pattern recognition, and adaptive switching) in terms of how they present the hallmarks of joint action. The results of the comparison lead to a new perspective for understanding how existing myoelectric systems relate to each other, along with recommendations for how to improve these systems by increasing the collaborative communication between each partner.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2022-12-24</strong></td>
+<td style="text-align: center;"><strong>Agent-based Modeling and Simulation of Human Muscle For Development of Software to Analyze the Human Gait</strong></td>
+<td style="text-align: center;">Sina Saadati et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2212.12760v1">2212.12760v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">In this research, we are about to present an agentbased model of human muscle which can be used in analysis of human movement. As the model is designed based on the physiological structure of the muscle, The simulation calculations would be natural, and also, It can be possible to analyze human movement using reverse engineering methods. The model is also a suitable choice to be used in modern prostheses, because the calculation of the model is less than other machine learning models such as artificial neural network algorithms and It makes our algorithm battery-friendly. We will also devise a method that can calculate the intensity of human muscle during gait cycle using a reverse engineering solution. The algorithm called Boots is different from some optimization methods, so It would be able to compute the activities of both agonist and antagonist muscles in a joint. As a consequence, By having an agent-based model of human muscle and Boots algorithm, We would be capable to develop software that can calculate the nervous stimulation of human's lower body muscle based on the angular displacement during gait cycle without using painful methods like electromyography. By developing the application as open-source software, We are hopeful to help researchers and physicians who are studying in medical and biomechanical fields.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2022-12-20</strong></td>
+<td style="text-align: center;"><strong>Pain level and pain-related behaviour classification using GRU-based sparsely-connected RNNs</strong></td>
+<td style="text-align: center;">Mohammad Mahdi Dehshibi et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2212.14806v1">2212.14806v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">There is a growing body of studies on applying deep learning to biometrics analysis. Certain circumstances, however, could impair the objective measures and accuracy of the proposed biometric data analysis methods. For instance, people with chronic pain (CP) unconsciously adapt specific body movements to protect themselves from injury or additional pain. Because there is no dedicated benchmark database to analyse this correlation, we considered one of the specific circumstances that potentially influence a person's biometrics during daily activities in this study and classified pain level and pain-related behaviour in the EmoPain database. To achieve this, we proposed a sparsely-connected recurrent neural networks (s-RNNs) ensemble with the gated recurrent unit (GRU) that incorporates multiple autoencoders using a shared training framework. This architecture is fed by multidimensional data collected from inertial measurement unit (IMU) and surface electromyography (sEMG) sensors. Furthermore, to compensate for variations in the temporal dimension that may not be perfectly represented in the latent space of s-RNNs, we fused hand-crafted features derived from information-theoretic approaches with represented features in the shared hidden state. We conducted several experiments which indicate that the proposed method outperforms the state-of-the-art approaches in classifying both pain level and pain-related behaviour.</td>
+</tr>
+</tbody>
+</table>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

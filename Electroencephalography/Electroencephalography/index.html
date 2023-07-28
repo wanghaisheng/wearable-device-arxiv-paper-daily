@@ -1,0 +1,1317 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../Electromyography/Electromyography/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>Electroencephalography - wearable-device-paper-daily</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "hh1oiyc7g7");
+</script>
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#electroencephalography" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="wearable-device-paper-daily" class="md-header__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wearable-device-paper-daily
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Electroencephalography
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="wearable-device-paper-daily" class="md-nav__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    wearable-device-paper-daily
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        arxiv-daily latest papers around wearable device arxiv paper daily
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Electroencephalography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Electroencephalography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Electroencephalography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Electroencephalography
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#electroencephalography" class="md-nav__link">
+    Electroencephalography
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Electromyography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Electromyography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electromyography/Electromyography/" class="md-nav__link">
+        Electromyography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          PPG
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          PPG
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPG/Photoplethysmography/" class="md-nav__link">
+        Photoplethysmography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Actigraphy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Actigraphy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actigraphy/actigraphy/" class="md-nav__link">
+        Actigraphy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          All search terms
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          All search terms
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../all%20search%20terms/all%20search%20terms/" class="md-nav__link">
+        All search terms
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Apple
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Apple
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apple/apple%20watch/" class="md-nav__link">
+        Apple watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Camera
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Camera
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../camera/wearable%20camera/" class="md-nav__link">
+        Wearable camera
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Heart rate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Heart rate
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../heart%20rate/heart%20rate/" class="md-nav__link">
+        Heart rate
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          Huawei
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Huawei
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20band/" class="md-nav__link">
+        Huawei band
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20watch/" class="md-nav__link">
+        Huawei watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          Smart glass
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Smart glass
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20glass/smart%20glass/" class="md-nav__link">
+        Smart glass
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Smart ring
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Smart ring
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20ring/smart%20ring/" class="md-nav__link">
+        Smart ring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Smart watch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Smart watch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20watch/smart%20watch/" class="md-nav__link">
+        Smart watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          Wearable device
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Wearable device
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wearable%20device/wearable%20device/" class="md-nav__link">
+        Wearable device
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#electroencephalography" class="md-nav__link">
+    Electroencephalography
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Electroencephalography</h1>
+
+<h3 id="electroencephalography">Electroencephalography</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Publish Date</th>
+<th style="text-align: center;">Title</th>
+<th style="text-align: center;">Authors</th>
+<th style="text-align: center;">PDF</th>
+<th style="text-align: center;">Code</th>
+<th style="text-align: center;">Abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>2023-07-26</strong></td>
+<td style="text-align: center;"><strong>NeuroHeed: Neuro-Steered Speaker Extraction using EEG Signals</strong></td>
+<td style="text-align: center;">Zexu Pan et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14303v1">2307.14303v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Humans possess the remarkable ability to selectively attend to a single speaker amidst competing voices and background noise, known as selective auditory attention. Recent studies in auditory neuroscience indicate a strong correlation between the attended speech signal and the corresponding brain's elicited neuronal activities, which the latter can be measured using affordable and non-intrusive electroencephalography (EEG) devices. In this study, we present NeuroHeed, a speaker extraction model that leverages EEG signals to establish a neuronal attractor which is temporally associated with the speech stimulus, facilitating the extraction of the attended speech signal in a cocktail party scenario. We propose both an offline and an online NeuroHeed, with the latter designed for real-time inference. In the online NeuroHeed, we additionally propose an autoregressive speaker encoder, which accumulates past extracted speech signals for self-enrollment of the attended speaker information into an auditory attractor, that retains the attentional momentum over time. Online NeuroHeed extracts the current window of the speech signals with guidance from both attractors. Experimental results demonstrate that NeuroHeed effectively extracts brain-attended speech signals, achieving high signal quality, excellent perceptual quality, and intelligibility in a two-speaker scenario.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-17</strong></td>
+<td style="text-align: center;"><strong>How time window influences biometrics performance: an EEG-based fingerprints connectivity study</strong></td>
+<td style="text-align: center;">Luca Didaci et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.08291v2">2307.08291v2</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">EEG-based biometric represents a relatively recent research field that aims to recognize individuals based on their recorded brain activity by means of electroencephalography (EEG). Among the numerous features that have been proposed, connectivity-based approaches represent one of the more promising methods tested so far. In this paper, we investigate how the performance of an EEG biometric system varies with respect to different time windows to understand if it is possible to define the optimal duration of EEG signal that can be used to extract those distinctive features. Overall, the results have shown a pronounced effect of the time window on the biometric performance measured in terms of EER (equal error rate) and AUC (area under the curve), with an evident increase of the biometric performance with an increase of the time window. In conclusion, we want to highlight that EEG connectivity has the potential to represent an optimal candidate as EEG fingerprint and that, in this context, it is very important to define a sufficient time window able to collect the subject specific features. Moreover, our preliminary results show that extending the window size beyond a certain maximum does not improve biometric systems' performance.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-13</strong></td>
+<td style="text-align: center;"><strong>Corticomorphic Hybrid CNN-SNN Architecture for EEG-based Low-footprint Low-latency Auditory Attention Detection</strong></td>
+<td style="text-align: center;">Richard Gall et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.08501v1">2307.08501v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">In a multi-speaker "cocktail party" scenario, a listener can selectively attend to a speaker of interest. Studies into the human auditory attention network demonstrate cortical entrainment to speech envelopes resulting in highly correlated Electroencephalography (EEG) measurements. Current trends in EEG-based auditory attention detection (AAD) using artificial neural networks (ANN) are not practical for edge-computing platforms due to longer decision windows using several EEG channels, with higher power consumption and larger memory footprint requirements. Nor are ANNs capable of accurately modeling the brain's top-down attention network since the cortical organization is complex and layer. In this paper, we propose a hybrid convolutional neural network-spiking neural network (CNN-SNN) corticomorphic architecture, inspired by the auditory cortex, which uses EEG data along with multi-speaker speech envelopes to successfully decode auditory attention with low latency down to 1 second, using only 8 EEG electrodes strategically placed close to the auditory cortex, at a significantly higher accuracy of 91.03%, compared to the state-of-the-art. Simultaneously, when compared to a traditional CNN reference model, our model uses ~15% fewer parameters at a lower bit precision resulting in ~57% memory footprint reduction. The results show great promise for edge-computing in brain-embedded devices, like smart hearing aids.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-06</strong></td>
+<td style="text-align: center;"><strong>A Hybrid End-to-End Spatio-Temporal Attention Neural Network with Graph-Smooth Signals for EEG Emotion Recognition</strong></td>
+<td style="text-align: center;">Shadi Sartipi et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.03068v1">2307.03068v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Recently, physiological data such as electroencephalography (EEG) signals have attracted significant attention in affective computing. In this context, the main goal is to design an automated model that can assess emotional states. Lately, deep neural networks have shown promising performance in emotion recognition tasks. However, designing a deep architecture that can extract practical information from raw data is still a challenge. Here, we introduce a deep neural network that acquires interpretable physiological representations by a hybrid structure of spatio-temporal encoding and recurrent attention network blocks. Furthermore, a preprocessing step is applied to the raw data using graph signal processing tools to perform graph smoothing in the spatial domain. We demonstrate that our proposed architecture exceeds state-of-the-art results for emotion classification on the publicly available DEAP dataset. To explore the generality of the learned model, we also evaluate the performance of our architecture towards transfer learning (TL) by transferring the model parameters from a specific source to other target domains. Using DEAP as the source dataset, we demonstrate the effectiveness of our model in performing cross-modality TL and improving emotion classification accuracy on DREAMER and the Emotional English Word (EEWD) datasets, which involve EEG-based emotion classification tasks with different stimuli.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-06</strong></td>
+<td style="text-align: center;"><strong>Trends in Machine Learning and Electroencephalogram (EEG): A Review for Undergraduate Researchers</strong></td>
+<td style="text-align: center;">Nathan Koome Murungi et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.02819v1">2307.02819v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">This paper presents a systematic literature review on Brain-Computer Interfaces (BCIs) in the context of Machine Learning. Our focus is on Electroencephalography (EEG) research, highlighting the latest trends as of 2023. The objective is to provide undergraduate researchers with an accessible overview of the BCI field, covering tasks, algorithms, and datasets. By synthesizing recent findings, our aim is to offer a fundamental understanding of BCI research, identifying promising avenues for future investigations.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-06</strong></td>
+<td style="text-align: center;"><strong>Brain Computer Interface (BCI) based on Electroencephalographic (EEG) patterns due to new cognitive tasks</strong></td>
+<td style="text-align: center;">Zahmeeth Sayed Sakkaff et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.02780v1">2307.02780v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">New mental tasks were investigated for suitability in Brain-Computer Interface (BCI). Electroencephalography (EEG) signals were collected and analyzed to identify these mental tasks. MS Windows-based software was developed for investigating and classifying recorded EEG data with unnecessary frequencies filtered out with Bandpass filtering. To identify the best feature vector construction method for a given mental task, feature vectors were constructed using Bandpower, Principal Component Analysis, and Downsampling separately. These feature vectors were then classified with Linear Discriminant Analysis, Linear Support Vector Machines, Critical Distance Classifiers, Nearest Neighbor Classifiers, and their Non-Linear counterparts to find the best-performing classifier. For comparison purposes, performances of already well-known mental tasks in the BCI community were computed along with that of new mental tasks introduced in this thesis. In the preliminary studies, it was found that the most promising new mental task which a BCI system could identify is the imagination of hitting a given square with an imaginary arrow from above (or below) and right, (or left) to the screen. The group of these mental tasks was named as 'Hit Series' (HS). A detailed investigation of HS was carried out and compared with the performance of Motor Imagery (MI) events which are the most heavily used mental tasks in EEG-based BCI systems. One subject achieved the maximum average performance for HS, 100 pct in the binary classifications while 99 pct in overall combined performance. The best average performances of the other two subjects for the same mental tasks were 93 pct and 87pct with the overall performance of 89 pct and 78 pct. Performances of the same three subjects for mental tasks in MI were relatively poor. The average performances were 92, 78, and 92 pct while overall performances were 87, 69, and 88 pct.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-04</strong></td>
+<td style="text-align: center;"><strong>K-complex Detection Using Fourier Spectrum Analysis In EEG</strong></td>
+<td style="text-align: center;">Alexey Protopopov et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.01754v1">2307.01754v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">K-complexes are an important marker of brain activity and are used both in clinical practice to perform sleep scoring, and in research. However, due to the size of electroencephalography (EEG) records, as well as the subjective nature of K-complex detection performed by somnologists, it is reasonable to automate K-complex detection. Previous works in this field of research have relied on the values of true positive rate and false positive rate to quantify the effectiveness of proposed methods, however this set of metrics may be misleading. The objective of the present research is to find a more accurate set of metrics and use them to develop a new method of K-complex detection, which would not rely on neural networks. Thus, the present article proposes two new methods for K-complex detection based on the fast Fourier transform. The results achieved demonstrated that the proposed methods offered a quality of K-complex detection that is either similar or superior to the quality of the methods demonstrated in previous works, including the methods employing neural networks, while requiring less computational power, meaning that K-complex detection does not require the use of neural networks. The proposed methods were evaluated using a new set of metrics, which is more representative of the quality of K-complex detection.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-04</strong></td>
+<td style="text-align: center;"><strong>Sensors and Systems for Monitoring Mental Fatigue: A systematic review</strong></td>
+<td style="text-align: center;">Prabin Sharma et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.01666v1">2307.01666v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Mental fatigue is a leading cause of motor vehicle accidents, medical errors, loss of workplace productivity, and student disengagements in e-learning environment. Development of sensors and systems that can reliably track mental fatigue can prevent accidents, reduce errors, and help increase workplace productivity. This review provides a critical summary of theoretical models of mental fatigue, a description of key enabling sensor technologies, and a systematic review of recent studies using biosensor-based systems for tracking mental fatigue in humans. We conducted a systematic search and review of recent literature which focused on detection and tracking of mental fatigue in humans. The search yielded 57 studies (N=1082), majority of which used electroencephalography (EEG) based sensors for tracking mental fatigue. We found that EEG-based sensors can provide a moderate to good sensitivity for fatigue detection. Notably, we found no incremental benefit of using high-density EEG sensors for application in mental fatigue detection. Given the findings, we provide a critical discussion on the integration of wearable EEG and ambient sensors in the context of achieving real-world monitoring. Future work required to advance and adapt the technologies toward widespread deployment of wearable sensors and systems for fatigue monitoring in semi-autonomous and autonomous industries is examined.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-27</strong></td>
+<td style="text-align: center;"><strong>Network inference in a stochastic multi-population neural mass model via approximate Bayesian computation</strong></td>
+<td style="text-align: center;">Susanne Ditlevsen et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.15787v1">2306.15787v1</a></td>
+<td style="text-align: center;"><a href="https://github.com/irenetubikanec/networkabc">link</a></td>
+<td style="text-align: center;">In this article, we propose a 6N-dimensional stochastic differential equation (SDE), modelling the activity of N coupled populations of neurons in the brain. This equation extends the Jansen and Rit neural mass model, which has been introduced to describe human electroencephalography (EEG) rhythms, in particular signals with epileptic activity. Our contributions are threefold: First, we introduce this stochastic N-population model and construct a reliable and efficient numerical method for its simulation, extending a splitting procedure for one neural population. Second, we present a modified Sequential Monte Carlo Approximate Bayesian Computation (SMC-ABC) algorithm to infer both the continuous and the discrete model parameters, the latter describing the coupling directions within the network. The proposed algorithm further develops a previous reference-table acceptance rejection ABC method, initially proposed for the inference of one neural population. On the one hand, the considered SMC-ABC approach reduces the computational cost due to the basic acceptance-rejection scheme. On the other hand, it is designed to account for both marginal and coupled interacting dynamics, allowing to identify the directed connectivity structure. Third, we illustrate the derived algorithm on both simulated data and real multi-channel EEG data, aiming to infer the brain's connectivity structure during epileptic seizure. The proposed algorithm may be used for parameter and network estimation in other multi-dimensional coupled SDEs for which a suitable numerical simulation method can be derived.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-23</strong></td>
+<td style="text-align: center;"><strong>Virtual Reality Sickness Reduces Attention During Immersive Experiences</strong></td>
+<td style="text-align: center;">Katherine J. Mimnaugh et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.13505v1">2306.13505v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">In this paper, we show that Virtual Reality (VR) sickness is associated with a reduction in attention, which was detected with the P3b Event-Related Potential (ERP) component from electroencephalography (EEG) measurements collected in a dual-task paradigm. We hypothesized that sickness symptoms such as nausea, eyestrain, and fatigue would reduce the users' capacity to pay attention to tasks completed in a virtual environment, and that this reduction in attention would be dynamically reflected in a decrease of the P3b amplitude while VR sickness was experienced. In a user study, participants were taken on a tour through a museum in VR along paths with varying amounts of rotation, shown previously to cause different levels of VR sickness. While paying attention to the virtual museum (the primary task), participants were asked to silently count tones of a different frequency (the secondary task). Control measurements for comparison against the VR sickness conditions were taken when the users were not wearing the Head-Mounted Display (HMD) and while they were immersed in VR but not moving through the environment. This exploratory study shows, across multiple analyses, that the effect mean amplitude of the P3b collected during the task is associated with both sickness severity measured after the task with a questionnaire (SSQ) and with the number of counting errors on the secondary task. Thus, VR sickness may impair attention and task performance, and these changes in attention can be tracked with ERP measures as they happen, without asking participants to assess their sickness symptoms in the moment.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-21</strong></td>
+<td style="text-align: center;"><strong>Reporting existing datasets for automatic epilepsy diagnosis and seizure detection</strong></td>
+<td style="text-align: center;">Palak Handa et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.12292v1">2306.12292v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">More than 50 million individuals are affected by epilepsy, a chronic neurological disorder characterized by unprovoked, recurring seizures and psychological symptoms. Researchers are working to automatically detect or predict epileptic episodes through Electroencephalography (EEG) signal analysis, and machine, and deep learning methods. Good quality, open-source, and free EEG data acts as a catalyst in this ongoing battle to manage this disease. This article presents 40+ publicly available EEG datasets for adult and pediatric human populations from 2001-2023. A comparative analysis and discussion on open and private EEG datasets have been done based on objective parameters in this domain. Bonn and CHB-MIT remain the benchmark datasets used for the automatic detection of epileptic and seizure EEG signals. Meta-data has also been released for large EEG data like CHB-MIT. This article will be updated every year to report the progress and changing trends in the development of EEG datasets in this field.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-13</strong></td>
+<td style="text-align: center;"><strong>Empirical Measurement of Aesthetic Experience of Music</strong></td>
+<td style="text-align: center;">Abhishek Gupta et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.07802v1">2306.07802v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Chills or goosebumps, also called frisson, is a phenomenon that is often associated with an aesthetic experience e.g., music or some other ecstatic experience. The temporal and spatial cause of frisson in the brain has been one of the biggest mysteries of human nature. Accumulating evidence suggests that aesthetic, namely subjective, affective, and evaluative processes are at play while listening to music, hence, it is an important subjective stimulus for systematic investigation. Advances in neuroimaging and cognitive neuroscience, have given impetus to neuro-aesthetics, a novel approach to music providing a phenomenological brain-based framework for the aesthetic experience of music with the potential to open the scope for future research. In this paper, we present an affordable, wearable, easy-to-carry device to measure phenomenological goosebumps intensity on our skin with respect to real-time data using IoT devices (Raspberry pi 3, model B). To test the device subjects were asked to provide a list of songs that elicit goosebumps. Wireless earphones were provided, allowing participants to walk around and dance while listening to their music. (Some subjects moved during sessions). Results indicate that goosebumps were reliably detected by the device after visual inspection of the videos/music. The effective measurement when interfaced with neurophysiological devices such as electroencephalography (EEG) can help interpret biomarkers of ecstatic emotions. The second part of the study focuses on identifying primary brain regions involved in goosebump experience during musical stimulation.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-10</strong></td>
+<td style="text-align: center;"><strong>TS-MoCo: Time-Series Momentum Contrast for Self-Supervised Physiological Representation Learning</strong></td>
+<td style="text-align: center;">Philipp Hallgarten et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.06522v1">2306.06522v1</a></td>
+<td style="text-align: center;"><a href="https://github.com/philipph77/ts-moco">link</a></td>
+<td style="text-align: center;">Limited availability of labeled physiological data often prohibits the use of powerful supervised deep learning models in the biomedical machine intelligence domain. We approach this problem and propose a novel encoding framework that relies on self-supervised learning with momentum contrast to learn representations from multivariate time-series of various physiological domains without needing labels. Our model uses a transformer architecture that can be easily adapted to classification problems by optimizing a linear output classification layer. We experimentally evaluate our framework using two publicly available physiological datasets from different domains, i.e., human activity recognition from embedded inertial sensory and emotion recognition from electroencephalography. We show that our self-supervised learning approach can indeed learn discriminative features which can be exploited in downstream classification tasks. Our work enables the development of domain-agnostic intelligent systems that can effectively analyze multivariate time-series data from physiological domains.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-06-05</strong></td>
+<td style="text-align: center;"><strong>Gotta Go Fast: Measuring Input/Output Latencies of Virtual Reality 3D Engines for Cognitive Experiments</strong></td>
+<td style="text-align: center;">Taeho Kang et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.02637v1">2306.02637v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Virtual Reality (VR) is seeing increased adoption across many fields. The field of experimental cognitive science is also testing utilization of the technology combined with physiological measures such as electroencephalography (EEG) and eye tracking. Quantitative measures of human behavior and cognition process, however, are sensitive to minuscule time resolutions that are often overlooked in the scope of consumer-level VR hardware and software stacks. In this preliminary study, we implement VR testing environments in two prominent 3D Virtual Reality frameworks (Unity and Unreal Engine) to measure latency values for stimulus onset execution code to Head-Mount Display (HMD) pixel change, as well as the latency between human behavioral response input to its registration in the engine environment under a typical cognitive experiment hardware setup. We find that whereas the specifics of the latency may further be influenced by different hardware and software setups, the variations in consumer hardware is apparent regardless and report detailed statistics on these latencies. Such consideration should be taken into account when designing VR-based cognitive experiments that measure human behavior.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-22</strong></td>
+<td style="text-align: center;"><strong>Towards Ultrasound Tongue Image prediction from EEG during speech production</strong></td>
+<td style="text-align: center;">Tamás Gábor Csapó et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2306.05374v1">2306.05374v1</a></td>
+<td style="text-align: center;"><a href="https://github.com/bme-smartlab/eeg-to-uti">link</a></td>
+<td style="text-align: center;">Previous initial research has already been carried out to propose speech-based BCI using brain signals (e.g.~non-invasive EEG and invasive sEEG / ECoG), but there is a lack of combined methods that investigate non-invasive brain, articulation, and speech signals together and analyze the cognitive processes in the brain, the kinematics of the articulatory movement and the resulting speech signal. In this paper, we describe our multimodal (electroencephalography, ultrasound tongue imaging, and speech) analysis and synthesis experiments, as a feasibility study. We extend the analysis of brain signals recorded during speech production with ultrasound-based articulation data. From the brain signal measured with EEG, we predict ultrasound images of the tongue with a fully connected deep neural network. The results show that there is a weak but noticeable relationship between EEG and ultrasound tongue images, i.e. the network can differentiate articulated speech and neutral tongue position.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-19</strong></td>
+<td style="text-align: center;"><strong>Energy-efficient memcapacitive physical reservoir computing system for temporal data processing</strong></td>
+<td style="text-align: center;">Md Razuan Hossain et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.12025v1">2305.12025v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Reservoir computing is a highly efficient machine learning framework for processing temporal data by extracting features from the input signal and mapping them into higher dimensional spaces. Physical reservoir layers have been realized using spintronic oscillators, atomic switch networks, silicon photonic modules, ferroelectric transistors, and volatile memristors. However, these devices are intrinsically energy-dissipative due to their resistive nature, which leads to increased power consumption. Therefore, capacitive memory devices can provide a more energy-efficient approach. Here, we leverage volatile biomembrane-based memcapacitors that closely mimic certain short-term synaptic plasticity functions as reservoirs to solve classification tasks and analyze time-series data in simulation and experimentally. Our system achieves a 98% accuracy rate for spoken digit classification and a normalized mean square error of 0.0012 in a second-order non-linear regression task. Further, to demonstrate the device's real-time temporal data processing capability, we demonstrate a 100% accuracy for an electroencephalography (EEG) signal classification problem for epilepsy detection. Most importantly, we demonstrate that for a random input sequence, each memcapacitor consumes on average 41.5fJ of energy per spike, irrespective of the chosen input voltage pulse width, and 415fW of average power for 100 ms pulse width, orders of magnitude lower than the state-of-the-art devices. Lastly, we believe the biocompatible, soft nature of our memcapacitor makes it highly suitable for computing and signal-processing applications in biological environments.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-18</strong></td>
+<td style="text-align: center;"><strong>Temporal Aware Mixed Attention-based Convolution and Transformer Network (MACTN) for EEG Emotion Recognition</strong></td>
+<td style="text-align: center;">Xiaopeng Si et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.18234v1">2305.18234v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Emotion recognition plays a crucial role in human-computer interaction, and electroencephalography (EEG) is advantageous for reflecting human emotional states. In this study, we propose MACTN, a hierarchical hybrid model for jointly modeling local and global temporal information. The model is inspired by neuroscience research on the temporal dynamics of emotions. MACTN extracts local emotional features through a convolutional neural network (CNN) and integrates sparse global emotional features through a transformer. Moreover, we employ channel attention mechanisms to identify the most task-relevant channels. Through extensive experimentation on two publicly available datasets, namely THU-EP and DEAP, our proposed method, MACTN, consistently achieves superior classification accuracy and F1 scores compared to other existing methods in most experimental settings. Furthermore, ablation studies have shown that the integration of both self-attention mechanisms and channel attention mechanisms leads to improved classification performance. Finally, an earlier version of this method, which shares the same ideas, won the Emotional BCI Competition's final championship in the 2022 World Robot Contest.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-18</strong></td>
+<td style="text-align: center;"><strong>Robust inference of causality in high-dimensional dynamical processes from the Information Imbalance of distance ranks</strong></td>
+<td style="text-align: center;">Vittorio Del Tatto et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.10817v2">2305.10817v2</a></td>
+<td style="text-align: center;"><a href="https://github.com/vdeltatto/imbalance-gain-causality">link</a></td>
+<td style="text-align: center;">We introduce an approach which allows inferring causal relationships between variables for which the time evolution is available. Our method builds on the ideas of Granger Causality and Transfer Entropy, but overcomes most of their limitations. Specifically, our approach tests whether the predictability of a putative driven system Y can be improved by incorporating information from a potential driver system X, without making assumptions on the underlying dynamics and without the need to compute probability densities of the dynamic variables. Causality is assessed by a rigorous variational scheme based on the Information Imbalance of distance ranks, a recently developed statistical test capable of inferring the relative information content of different distance measures. This framework makes causality detection possible even for high-dimensional systems where only few of the variables are known or measured. Benchmark tests on coupled dynamical systems demonstrate that our approach outperforms other model-free causality detection methods, successfully handling both unidirectional and bidirectional couplings, and it is capable of detecting the arrow of time when present. We also show that the method can be used to robustly detect causality in electroencephalography data in humans.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-05-17</strong></td>
+<td style="text-align: center;"><strong>BASEN: Time-Domain Brain-Assisted Speech Enhancement Network with Convolutional Cross Attention in Multi-talker Conditions</strong></td>
+<td style="text-align: center;">Jie Zhang et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.09994v1">2305.09994v1</a></td>
+<td style="text-align: center;"><a href="https://github.com/jzhangu/basen">link</a></td>
+<td style="text-align: center;">Time-domain single-channel speech enhancement (SE) still remains challenging to extract the target speaker without any prior information on multi-talker conditions. It has been shown via auditory attention decoding that the brain activity of the listener contains the auditory information of the attended speaker. In this paper, we thus propose a novel time-domain brain-assisted SE network (BASEN) incorporating electroencephalography (EEG) signals recorded from the listener for extracting the target speaker from monaural speech mixtures. The proposed BASEN is based on the fully-convolutional time-domain audio separation network. In order to fully leverage the complementary information contained in the EEG signals, we further propose a convolutional multi-layer cross attention module to fuse the dual-branch features. Experimental results on a public dataset show that the proposed model outperforms the state-of-the-art method in several evaluation metrics. The reproducible code is available at https://github.com/jzhangU/Basen.git.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-24</strong></td>
+<td style="text-align: center;"><strong>Time delay multi-feature correlation analysis to extract subtle dependencies from EEG signals</strong></td>
+<td style="text-align: center;">Jarek Duda et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2305.09478v2">2305.09478v2</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Electroencephalography (EEG) signals are resultants of extremely complex brain activity. Some details of this hidden dynamics might be accessible through e.g. joint distributions $\rho_{\Delta t}$ of signals of pairs of electrodes shifted by various time delays (lag $\Delta t$). A standard approach is monitoring a single evaluation of such joint distributions, like Pearson correlation (or mutual information), which turns out relatively uninteresting - as expected, there is usually a small peak for zero delay and nearly symmetric drop with delay. In contrast, such a complex signal might be composed of multiple types of statistical dependencies - this article proposes approach to automatically decompose and extract them. Specifically, we model such joint distributions as polynomials, estimated separately for all considered lag dependencies, then with PCA dimensionality reduction we find the dominant joint density distortion directions $f_v$. This way we get a few lag dependent features $a_i(\Delta t)$ describing separate dominating statistical dependencies of known contributions: $\rho_{\Delta t}(y,z)\approx \sum_{i=1}^r a_i(\Delta t)\, f_{v_i}(y,z)$. Such features complement Pearson correlation, extracting hidden more complex behavior, e.g. with asymmetry which might be related with direction of information transfer, extrema suggesting characteristic delays, or oscillatory behavior suggesting some periodicity. There is also discussed extension of Granger causality to such multi-feature joint density analysis, suggesting e.g. two separate causality waves. While this early article is initial fundamental research, in future it might help e.g. with understanding of cortex hidden dynamics, diagnosis of pathologies like epilepsy, determination of precise electrode position, or building brain-computer interface.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-21</strong></td>
+<td style="text-align: center;"><strong>A Convolutional Spiking Network for Gesture Recognition in Brain-Computer Interfaces</strong></td>
+<td style="text-align: center;">Yiming Ai et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.11106v2">2304.11106v2</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Brain-computer interfaces are being explored for a wide variety of therapeutic applications. Typically, this involves measuring and analyzing continuous-time electrical brain activity via techniques such as electrocorticogram (ECoG) or electroencephalography (EEG) to drive external devices. However, due to the inherent noise and variability in the measurements, the analysis of these signals is challenging and requires offline processing with significant computational resources. In this paper, we propose a simple yet efficient machine learning-based approach for the exemplary problem of hand gesture classification based on brain signals. We use a hybrid machine learning approach that uses a convolutional spiking neural network employing a bio-inspired event-driven synaptic plasticity rule for unsupervised feature learning of the measured analog signals encoded in the spike domain. We demonstrate that this approach generalizes to different subjects with both EEG and ECoG data and achieves superior accuracy in the range of 92.74-97.07% in identifying different hand gesture classes and motor imagery tasks.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-21</strong></td>
+<td style="text-align: center;"><strong>Interpretable and Robust AI in EEG Systems: A Survey</strong></td>
+<td style="text-align: center;">Xinliang Zhou et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.10755v1">2304.10755v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The close coupling of artificial intelligence (AI) and electroencephalography (EEG) has substantially advanced human-computer interaction (HCI) technologies in the AI era. Different from traditional EEG systems, the interpretability and robustness of AI-based EEG systems are becoming particularly crucial. The interpretability clarifies the inner working mechanisms of AI models and thus can gain the trust of users. The robustness reflects the AI's reliability against attacks and perturbations, which is essential for sensitive and fragile EEG signals. Thus the interpretability and robustness of AI in EEG systems have attracted increasing attention, and their research has achieved great progress recently. However, there is still no survey covering recent advances in this field. In this paper, we present the first comprehensive survey and summarize the interpretable and robust AI techniques for EEG systems. Specifically, we first propose a taxonomy of interpretability by characterizing it into three types: backpropagation, perturbation, and inherently interpretable methods. Then we classify the robustness mechanisms into four classes: noise and artifacts, human variability, data acquisition instability, and adversarial attacks. Finally, we identify several critical and unresolved challenges for interpretable and robust AI in EEG systems and further discuss their future directions.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-12</strong></td>
+<td style="text-align: center;"><strong>Adaptive Gated Graph Convolutional Network for Explainable Diagnosis of Alzheimer's Disease using EEG Data</strong></td>
+<td style="text-align: center;">Dominik Klepl et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.05874v1">2304.05874v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Graph neural network (GNN) models are increasingly being used for the classification of electroencephalography (EEG) data. However, GNN-based diagnosis of neurological disorders, such as Alzheimer's disease (AD), remains a relatively unexplored area of research. Previous studies have relied on functional connectivity methods to infer brain graph structures and used simple GNN architectures for the diagnosis of AD. In this work, we propose a novel adaptive gated graph convolutional network (AGGCN) that can provide explainable predictions. AGGCN adaptively learns graph structures by combining convolution-based node feature enhancement with a well-known correlation-based measure of functional connectivity. Furthermore, the gated graph convolution can dynamically weigh the contribution of various spatial scales. The proposed model achieves high accuracy in both eyes-closed and eyes-open conditions, indicating the stability of learned representations. Finally, we demonstrate that the proposed AGGCN model generates consistent explanations of its predictions that might be relevant for further study of AD-related alterations of brain networks.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-12</strong></td>
+<td style="text-align: center;"><strong>Dynamic Graph Representation Learning with Neural Networks: A Survey</strong></td>
+<td style="text-align: center;">Leshanshui Yang et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.05729v1">2304.05729v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">In recent years, Dynamic Graph (DG) representations have been increasingly used for modeling dynamic systems due to their ability to integrate both topological and temporal information in a compact representation. Dynamic graphs allow to efficiently handle applications such as social network prediction, recommender systems, traffic forecasting or electroencephalography analysis, that can not be adressed using standard numeric representations. As a direct consequence of the emergence of dynamic graph representations, dynamic graph learning has emerged as a new machine learning problem, combining challenges from both sequential/temporal data processing and static graph learning. In this research area, Dynamic Graph Neural Network (DGNN) has became the state of the art approach and plethora of models have been proposed in the very recent years. This paper aims at providing a review of problems and models related to dynamic graph learning. The various dynamic graph supervised learning settings are analysed and discussed. We identify the similarities and differences between existing models with respect to the way time information is modeled. Finally, general guidelines for a DGNN designer when faced with a dynamic graph learning problem are provided.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-04-01</strong></td>
+<td style="text-align: center;"><strong>Upper Limb Movement Execution Classification using Electroencephalography for Brain Computer Interface</strong></td>
+<td style="text-align: center;">Saadat Ullah Khan et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.06036v1">2304.06036v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">An accurate classification of upper limb movements using electroencephalography (EEG) signals is gaining significant importance in recent years due to the prevalence of brain-computer interfaces. The upper limbs in the human body are crucial since different skeletal segments combine to make a range of motion that helps us in our trivial daily tasks. Decoding EEG-based upper limb movements can be of great help to people with spinal cord injury (SCI) or other neuro-muscular diseases such as amyotrophic lateral sclerosis (ALS), primary lateral sclerosis, and periodic paralysis. This can manifest in a loss of sensory and motor function, which could make a person reliant on others to provide care in day-to-day activities. We can detect and classify upper limb movement activities, whether they be executed or imagined using an EEG-based brain-computer interface (BCI). Toward this goal, we focus our attention on decoding movement execution (ME) of the upper limb in this study. For this purpose, we utilize a publicly available EEG dataset that contains EEG signal recordings from fifteen subjects acquired using a 61-channel EEG device. We propose a method to classify four ME classes for different subjects using spectrograms of the EEG data through pre-trained deep learning (DL) models. Our proposed method of using EEG spectrograms for the classification of ME has shown significant results, where the highest average classification accuracy (for four ME classes) obtained is 87.36%, with one subject achieving the best classification accuracy of 97.03%.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-03-29</strong></td>
+<td style="text-align: center;"><strong>Parkinsons Disease Detection via Resting-State Electroencephalography Using Signal Processing and Machine Learning Techniques</strong></td>
+<td style="text-align: center;">Krish Desai et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.01214v1">2304.01214v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Parkinsons Disease (PD) is a neurodegenerative disorder resulting in motor deficits due to advancing degeneration of dopaminergic neurons. PD patients report experiencing tremor, rigidity, visual impairment, bradykinesia, and several cognitive deficits. Although Electroencephalography (EEG) indicates abnormalities in PD patients, one major challenge is the lack of a consistent, accurate, and systemic biomarker for PD in order to closely monitor the disease with therapeutic treatments and medication. In this study, we collected Electroencephalographic data from 15 PD patients and 16 Healthy Controls (HC). We first preprocessed every EEG signal using several techniques and extracted relevant features using many feature extraction algorithms. Afterwards, we applied several machine learning algorithms to classify PD versus HC. We found the most significant metrics to be achieved by the Random Forest ensemble learning approach, with an accuracy, precision, recall, F1 score, and AUC of 97.5%, 100%, 95%, 0.967, and 0.975, respectively. The results of this study show promise for exposing PD abnormalities using EEG during clinical diagnosis, and automating this process using signal processing techniques and ML algorithms to evaluate the difference between healthy individuals and PD patients.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-03-27</strong></td>
+<td style="text-align: center;"><strong>EEGMatch: Learning with Incomplete Labels for Semi-Supervised EEG-based Cross-Subject Emotion Recognition</strong></td>
+<td style="text-align: center;">Rushuang Zhou et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2304.06496v1">2304.06496v1</a></td>
+<td style="text-align: center;"><a href="https://github.com/kazabana/eegmatch">link</a></td>
+<td style="text-align: center;">Electroencephalography (EEG) is an objective tool for emotion recognition and shows promising performance. However, the label scarcity problem is a main challenge in this field, which limits the wide application of EEG-based emotion recognition. In this paper, we propose a novel semi-supervised learning framework (EEGMatch) to leverage both labeled and unlabeled EEG data. First, an EEG-Mixup based data augmentation method is developed to generate more valid samples for model learning. Second, a semi-supervised two-step pairwise learning method is proposed to bridge prototype-wise and instance-wise pairwise learning, where the prototype-wise pairwise learning measures the global relationship between EEG data and the prototypical representation of each emotion class and the instance-wise pairwise learning captures the local intrinsic relationship among EEG data. Third, a semi-supervised multi-domain adaptation is introduced to align the data representation among multiple domains (labeled source domain, unlabeled source domain, and target domain), where the distribution mismatch is alleviated. Extensive experiments are conducted on two benchmark databases (SEED and SEED-IV) under a cross-subject leave-one-subject-out cross-validation evaluation protocol. The results show the proposed EEGmatch performs better than the state-of-the-art methods under different incomplete label conditions (with 6.89% improvement on SEED and 1.44% improvement on SEED-IV), which demonstrates the effectiveness of the proposed EEGMatch in dealing with the label scarcity problem in emotion recognition using EEG signals. The source code is available at https://github.com/KAZABANA/EEGMatch.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-03-26</strong></td>
+<td style="text-align: center;"><strong>Driver Drowsiness Detection with Commercial EEG Headsets</strong></td>
+<td style="text-align: center;">Qazal Rezaee et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2303.14841v1">2303.14841v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Driver Drowsiness is one of the leading causes of road accidents. Electroencephalography (EEG) is highly affected by drowsiness; hence, EEG-based methods detect drowsiness with the highest accuracy. Developments in manufacturing dry electrodes and headsets have made recording EEG more convenient. Vehicle-based features used for detecting drowsiness are easy to capture but do not have the best performance. In this paper, we investigated the performance of EEG signals recorded in 4 channels with commercial headsets against the vehicle-based technique in drowsiness detection. We recorded EEG signals of 50 volunteers driving a simulator in drowsy and alert states by commercial devices. The observer rating of the drowsiness method was used to determine the drowsiness level of the subjects. The meaningful separation of vehicle-based features, recorded by the simulator, and EEG-based features of the two states of drowsiness and alertness have been investigated. The comparison results indicated that the EEG-based features are separated with lower p-values than the vehicle-based ones in the two states. It is concluded that EEG headsets can be feasible alternatives with better performance compared to vehicle-based methods for detecting drowsiness.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-03-20</strong></td>
+<td style="text-align: center;"><strong>Relate auditory speech to EEG by shallow-deep attention-based network</strong></td>
+<td style="text-align: center;">Fan Cui et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2303.10897v1">2303.10897v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Electroencephalography (EEG) plays a vital role in detecting how brain responses to different stimulus. In this paper, we propose a novel Shallow-Deep Attention-based Network (SDANet) to classify the correct auditory stimulus evoking the EEG signal. It adopts the Attention-based Correlation Module (ACM) to discover the connection between auditory speech and EEG from global aspect, and the Shallow-Deep Similarity Classification Module (SDSCM) to decide the classification result via the embeddings learned from the shallow and deep layers. Moreover, various training strategies and data augmentation are used to boost the model robustness. Experiments are conducted on the dataset provided by Auditory EEG challenge (ICASSP Signal Processing Grand Challenge 2023). Results show that the proposed model has a significant gain over the baseline on the match-mismatch track.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-03-19</strong></td>
+<td style="text-align: center;"><strong>Enabling Immersion and Presence in the Metaverse with Over-the-Air Brain-Computer Interface</strong></td>
+<td style="text-align: center;">Nguyen Quang Hieu et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2303.10577v1">2303.10577v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Decoding brain signals can not only reveal Metaverse users' expectations but also early detect error-related behaviors such as stress, drowsiness, and motion sickness. For that, this article proposes a pioneering framework using wireless/over-the-air Brain-Computer Interface (BCI) to assist creation of virtual avatars as human representation in the Metaverse. Specifically, to eliminate the computational burden for Metaverse users' devices, we leverage Wireless Edge Servers (WES) that are popular in 5G architecture and therein URLLC, enhanced broadband features to obtain and process the brain activities, i.e., electroencephalography (EEG) signals (via uplink wireless channels). As a result, the WES can learn human behaviors, adapt system configurations, and allocate radio resources to create individualized settings and enhance user experiences. Despite the potential of BCI, the inherent noisy/fading wireless channels and the uncertainty in Metaverse users' demands and behaviors make the related resource allocation and learning/classification problems particularly challenging. We formulate the joint learning and resource allocation problem as a Quality-of-Experience (QoE) maximization problem that takes into the latency, brain classification accuracy, and resources of the system. To tackle this mixed integer programming problem, we then propose two novel algorithms that are (i) a hybrid learning algorithm to maximize the user QoE and (ii) a meta-learning algorithm to exploit the neurodiversity of the brain signals among multiple Metaverse users. The extensive experiment results with different BCI datasets show that our proposed algorithms can not only provide low delay for virtual reality (VR) applications but also can achieve high classification accuracy for the collected brain signals.</td>
+</tr>
+</tbody>
+</table>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1317 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../camera/wearable%20camera/">
+      
+      
+        <link rel="next" href="../../huawei/huawei%20band/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.1, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>Heart rate - wearable-device-paper-daily</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "hh1oiyc7g7");
+</script>
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#heart-rate" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="wearable-device-paper-daily" class="md-header__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            wearable-device-paper-daily
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Heart rate
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="wearable-device-paper-daily" class="md-nav__button md-logo" aria-label="wearable-device-paper-daily" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    wearable-device-paper-daily
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wanghaisheng/wearable-device-arxiv-paper-daily" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        arxiv-daily latest papers around wearable device arxiv paper daily
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Electroencephalography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Electroencephalography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electroencephalography/Electroencephalography/" class="md-nav__link">
+        Electroencephalography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Electromyography
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Electromyography
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Electromyography/Electromyography/" class="md-nav__link">
+        Electromyography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          PPG
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          PPG
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PPG/Photoplethysmography/" class="md-nav__link">
+        Photoplethysmography
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Actigraphy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Actigraphy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actigraphy/actigraphy/" class="md-nav__link">
+        Actigraphy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          All search terms
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          All search terms
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../all%20search%20terms/all%20search%20terms/" class="md-nav__link">
+        All search terms
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          Apple
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Apple
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../apple/apple%20watch/" class="md-nav__link">
+        Apple watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Camera
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Camera
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../camera/wearable%20camera/" class="md-nav__link">
+        Wearable camera
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Heart rate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Heart rate
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Heart rate
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Heart rate
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#heart-rate" class="md-nav__link">
+    heart rate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          Huawei
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Huawei
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20band/" class="md-nav__link">
+        Huawei band
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../huawei/huawei%20watch/" class="md-nav__link">
+        Huawei watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+          Smart glass
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11">
+          <span class="md-nav__icon md-icon"></span>
+          Smart glass
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20glass/smart%20glass/" class="md-nav__link">
+        Smart glass
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          Smart ring
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_12">
+          <span class="md-nav__icon md-icon"></span>
+          Smart ring
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20ring/smart%20ring/" class="md-nav__link">
+        Smart ring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Smart watch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Smart watch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../smart%20watch/smart%20watch/" class="md-nav__link">
+        Smart watch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          Wearable device
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Wearable device
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../wearable%20device/wearable%20device/" class="md-nav__link">
+        Wearable device
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#heart-rate" class="md-nav__link">
+    heart rate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Heart rate</h1>
+
+<h3 id="heart-rate">heart rate</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Publish Date</th>
+<th style="text-align: center;">Title</th>
+<th style="text-align: center;">Authors</th>
+<th style="text-align: center;">PDF</th>
+<th style="text-align: center;">Code</th>
+<th style="text-align: center;">Abstract</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>News from the Swampland -- Constraining string theory with astrophysics and cosmology</strong></td>
+<td style="text-align: center;">Nils Schöneberg et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.15060v1">2307.15060v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Our current best guess for a unified theory of gravitation and quantum field theory (string theory) generically predicts a set of requirements for a consistently quantized theory, the Swampland criteria. Refined versions of these criteria have recently been shown to be in mild tension with cosmological observations. We summarize the status of the current impact of and constraints on the Swampland conjectures from cosmology, and subject a variety of dark energy quintessence models to recently released cosmological datasets. We find that instead of tightening the tension, the new data allows for slightly more freedom in the Swampland criteria. We further demonstrate that if there is no theoretical argument made to prevent interactions of the moduli fields with the electromagnetic sector, a novel fine-tuning argument arises from the extremely tight current constraints on such interactions. Finally, we conclude with a cautionary tale on model-independent reconstructions of the Swampland criteria from expansion rate data.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Probing the large deviations for the Beta random walk in random medium</strong></td>
+<td style="text-align: center;">Alexander K. Hartmann et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.15041v1">2307.15041v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">We consider a discrete-time random walk on a one-dimensional lattice with space and time-dependent random jump probabilities, known as the Beta random walk. We are interested in the probability that, for a given realization of the jump probabilities (a sample), a walker starting at the origin at time $t=0$ is at position beyond $\xi \sqrt{T/2}$ at time $T$. This probability fluctuates from sample to sample and we study the large-deviation rate function which characterizes the tails of its distribution at large time $T \gg 1$. It is argued that, up to a simple rescaling, this rate function is identical to the one recently obtained exactly by two of the authors for the continuum version of the model. That continuum model also appears in the macroscopic fluctuation theory of a class of lattice gases, e.g. in the so-called KMP model of heat transfer. An extensive numerical simulation of the Beta random walk, based on an importance sampling algorithm, is found in good agreement with the detailed analytical predictions. A first-order transition in the tilted measure, predicted to occur in the continuum model, is also observed in the numerics.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Diverse Inpainting and Editing with GAN Inversion</strong></td>
+<td style="text-align: center;">Ahmet Burak Yildirim et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.15033v1">2307.15033v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Recent inversion methods have shown that real images can be inverted into StyleGAN's latent space and numerous edits can be achieved on those images thanks to the semantically rich feature representations of well-trained GAN models. However, extensive research has also shown that image inversion is challenging due to the trade-off between high-fidelity reconstruction and editability. In this paper, we tackle an even more difficult task, inverting erased images into GAN's latent space for realistic inpaintings and editings. Furthermore, by augmenting inverted latent codes with different latent samples, we achieve diverse inpaintings. Specifically, we propose to learn an encoder and mixing network to combine encoded features from erased images with StyleGAN's mapped features from random samples. To encourage the mixing network to utilize both inputs, we train the networks with generated data via a novel set-up. We also utilize higher-rate features to prevent color inconsistencies between the inpainted and unerased parts. We run extensive experiments and compare our method with state-of-the-art inversion and inpainting methods. Qualitative metrics and visual comparisons show significant improvements.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Revealing the Impact of Beamforming in ISAC</strong></td>
+<td style="text-align: center;">Chongjun Ouyang et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.15023v1">2307.15023v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">This letter proposes advanced beamforming design and analyzes its influence on the sensing and communications (S&amp;C) performance for a multiple-antenna integrated S&amp;C (ISAC) system with a single communication user and a single target. Novel closed-form beamformers are derived for three typical scenarios, including the sensing-centric design, communications-centric design, and Pareto optimal design. Regarding each scenario, the outage probability, ergodic communication rate (CR), and sensing rate (SR) are analyzed to derive the diversity orders and high signal-to-noise ratio slopes. Numerical results are provided to demonstrate that i) beamforming design can affect the high-SNR power offset and diversity order but does not influence the high-SNR slope; ii) ISAC exhibits larger high-SNR slopes and a more extensive SR-CR region than conventional frequency-division S&amp;C (FDSAC) techniques.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>SuperCLUE: A Comprehensive Chinese Large Language Model Benchmark</strong></td>
+<td style="text-align: center;">Liang Xu et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.15020v1">2307.15020v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Large language models (LLMs) have shown the potential to be integrated into human daily lives. Therefore, user preference is the most critical criterion for assessing LLMs' performance in real-world scenarios. However, existing benchmarks mainly focus on measuring models' accuracy using multi-choice questions, which limits the understanding of their capabilities in real applications. We fill this gap by proposing a comprehensive Chinese benchmark SuperCLUE, named after another popular Chinese LLM benchmark CLUE. SuperCLUE encompasses three sub-tasks: actual users' queries and ratings derived from an LLM battle platform (CArena), open-ended questions with single and multiple-turn dialogues (OPEN), and closed-ended questions with the same stems as open-ended single-turn ones (CLOSE). Our study shows that accuracy on closed-ended questions is insufficient to reflect human preferences achieved on open-ended ones. At the same time, they can complement each other to predict actual user preferences. We also demonstrate that GPT-4 is a reliable judge to automatically evaluate human preferences on open-ended questions in a Chinese context. Our benchmark will be released at https://www.CLUEbenchmarks.com</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Decomposing and Routing Quantum Circuits Under Constraints for Neutral Atom Architectures</strong></td>
+<td style="text-align: center;">Natalia Nottingham et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14996v1">2307.14996v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Quantum computing is in an era defined by rapidly evolving quantum hardware technologies, combined with persisting high gate error rates, large amounts of noise, and short coherence times. Overcoming these limitations requires systems-level approaches that account for the strengths and weaknesses of the underlying hardware technology. Yet few hardware-aware compiler techniques exist for neutral atom devices, with no prior work on compiling to the neutral atom native gate set. In particular, current neutral atom hardware does not support certain single-qubit rotations via local addressing, which often requires the circuit to be decomposed into a large number of gates, leading to long circuit durations and low overall fidelities.   We propose the first compiler designed to overcome the challenges of limited local addressibility in neutral atom quantum computers. We present algorithms to decompose circuits into the neutral atom native gate set, with emphasis on optimizing total pulse area of global gates, which dominate gate execution costs in several current architectures. Furthermore, we explore atom movement as an alternative to expensive gate decompositions, gaining immense speedup with routing, which remains a huge overhead for many quantum circuits. Our decomposition optimizations result in up to ~3.5x and ~2.9x speedup in time spent executing global gates and time spent executing single-qubit gates, respectively. When combined with our atom movement routing algorithms, our compiler achieves up to ~10x reduction in circuit duration, with over ~2x improvement in fidelity. We show that our compiler strategies can be adapted for a variety of hardware-level parameters as neutral atom technology continues to develop.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Learning cross-layer dependence structure in multilayer networks</strong></td>
+<td style="text-align: center;">Jiaheng Li et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14982v1">2307.14982v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Multilayer networks are a network data structure in which elements in a population of interest have multiple modes of interaction or relation, represented by multiple networks called layers. We propose a novel class of models for cross-layer dependence in multilayer networks, aiming to learn how interactions in one or more layers may influence interactions in other layers of the multilayer network, by developing a class of network separable models which separate the network formation process from the layer formation process. In our framework, we are able to extend existing single layer network models to a multilayer network model with cross-layer dependence. We establish non-asymptotic bounds on the error of estimators and demonstrate rates of convergence for both maximum likelihood estimators and maximum pseudolikelihood estimators in scenarios of increasing parameter dimension. We additionally establish non-asymptotic error bounds on the multivariate normal approximation and elaborate a method for model selection which controls the false discovery rate. We conduct simulation studies which demonstrate that our framework and method work well in realistic settings which might be encountered in applications. Lastly, we illustrate the utility of our method through an application to the Lazega lawyers network.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>A Stochastic Gradient Tracking Algorithm for Decentralized Optimization With Inexact Communication</strong></td>
+<td style="text-align: center;">Suhail M. Shah et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14942v1">2307.14942v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Decentralized optimization is typically studied under the assumption of noise-free transmission. However, real-world scenarios often involve the presence of noise due to factors such as additive white Gaussian noise channels or probabilistic quantization of transmitted data. These sources of noise have the potential to degrade the performance of decentralized optimization algorithms if not effectively addressed. In this paper, we focus on the noisy communication setting and propose an algorithm that bridges the performance gap caused by communication noise while also mitigating other challenges like data heterogeneity. We establish theoretical results of the proposed algorithm that quantify the effect of communication noise and gradient noise on the performance of the algorithm. Notably, our algorithm achieves the optimal convergence rate for minimizing strongly convex, smooth functions in the context of inexact communication and stochastic gradients. Finally, we illustrate the superior performance of the proposed algorithm compared to its state-of-the-art counterparts on machine learning problems using MNIST and CIFAR-10 datasets.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Simulated analogues II: a new methodology for non-parametric matching of models to observations</strong></td>
+<td style="text-align: center;">Rami Al-Belmpeisi et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14924v1">2307.14924v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Star formation is a multi-scale problem, and only global simulations that account for the connection from the molecular cloud scale gas flow to the accreting protostar can reflect the observed complexity of protostellar systems. Star-forming regions are characterised by supersonic turbulence and as a result, it is not possible to simultaneously design models that account for the larger environment and in detail reproduce observed stellar systems. Instead, the stellar inventories can be matched statistically, and best matches found that approximate specific observations. Observationally, a combination of single-dish telescopes and interferometers are now able to resolve the nearest protostellar objects on all scales from the protostellar core to the inner 10 AU. We present a new non-parametric methodology which uses high-resolution simulations and post-processing methods to match simulations and observations using deep learning. Our goal is to perform a down-selection from large data sets of synthetic images to a ranked list of best-matching candidates with respect to the observation. This is particularly useful for binary and multiple stellar systems that form in turbulent environments. The objective is to accelerate the rate at which we can do such comparisons, remove biases from hand-picking matches, and contribute to identifying the underlying physical processes that drive the creation and evolution of observed protostellar systems.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>On the survivability of a population of gas giant planets on wide orbits</strong></td>
+<td style="text-align: center;">Ethan Carter et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14908v1">2307.14908v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The existence of giant planets on wide orbits ($\stackrel{&gt;}{_\sim}100$AU) challenge planet formation theories; the core accretion scenario has difficulty in forming them, whereas the disc instability model forms an overabundance of them that is not seen observations. We perform $N$-body simulations investigating the effect of close stellar encounters ($\leq 1200$AU) on systems hosting wide-orbit giant planets and the extent at which such interactions may disrupt the initial wide-orbit planet population. We find that the effect of an interaction on the orbit of a planet is stronger for high-mass, low-velocity perturbers, as expected. We find that due to just a single encounter there is a $\sim 17%$ chance that the wide-orbit giant planet is liberated in the field, a $\sim 10$% chance it is scattered significantly outwards, and a $\sim 6$% chance it is significantly scattered inwards. Moreover, there is a $\sim 21\%$ chance that its eccentricity is excited to e&gt;0.1, making it more prone to disruption in subsequent encounters. The results strongly suggest that the effect of even a single stellar encounter is significant in disrupting the primordial wide-orbit giant planet population; in reality the effect will be even more prominent, as in a young star-forming region more such interactions are expected to occur. We conclude that the low occurrence rate of wide-orbit planets revealed by observational surveys does not exclude the possibility that such planetary systems are initially abundant, and therefore the disc-instability model may be a plausible scenario for their formation.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Scaling Session-Based Transformer Recommendations using Optimized Negative Sampling and Loss Functions</strong></td>
+<td style="text-align: center;">Timo Wilm et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14906v1">2307.14906v1</a></td>
+<td style="text-align: center;"><a href="https://github.com/otto-de/tron">link</a></td>
+<td style="text-align: center;">This work introduces TRON, a scalable session-based Transformer Recommender using Optimized Negative-sampling. Motivated by the scalability and performance limitations of prevailing models such as SASRec and GRU4Rec+, TRON integrates top-k negative sampling and listwise loss functions to enhance its recommendation accuracy. Evaluations on relevant large-scale e-commerce datasets show that TRON improves upon the recommendation quality of current methods while maintaining training speeds similar to SASRec. A live A/B test yielded an 18.14% increase in click-through rate over SASRec, highlighting the potential of TRON in practical settings. For further research, we provide access to our source code at https://github.com/otto-de/TRON and an anonymized dataset at https://github.com/otto-de/recsys-dataset.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Analyzing the Closed-Loop Performance of Detect-And-Avoid Systems</strong></td>
+<td style="text-align: center;">Ítalo Romani de Oliveira et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14894v1">2307.14894v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Detect-And-Avoid (DAA) algorithms for unmanned air vehicles have industry standards called Minimum Operational Performance Standards (MOPS), establishing criteria to check whether they can ensure safe separation for all plausible operational conditions. However, these MOPS ensure performance for the avoidance maneuvers, which are open-loop, but not for the maneuvers that bring the air vehicles back to their intended courses, closing the control loop of the missions. In this paper, we analyze the closed-loop performance of existing DAA algorithms, by experimenting large numbers of traffic configurations with 4 aircraft in a delimited airspace.   We measure and analyze their rates of loss of separation and timeout events, the latter happening when a chain of maneuvers exceeds the maximum supply of energy in a vehicle. We also analyze the efficiency of the closed-loop logic, expressed as the excess fuel rate, and study the relationship between safety and efficiency in these scenarios. Our results show that the inefficiency caused by DAA algorithms is very significant in dense airspaces and that it offers ample space for improvement.   Performing the simulations of the closed-loop mission management logic can be highly time consuming. Despite there being Neural Network approximations of DAA logic that alleviate the computational load, none of those that we found available can properly handle cases with more than one intruder in the ownship surveillance range. Therefore, in an attempt to overcome the high computational cost of analyzing the closed-loop performance of DAA algorithms, we study the correlation between inefficiency and safety of closed-loop scenarios, and some indicators from the corresponding open-loop scenarios, such as angle of deviation and number of deviations per flight time.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Anisotropic multiband superconductivity in 2M-WS$_{2}$ probed by controlled disorder</strong></td>
+<td style="text-align: center;">Sunil Ghimire et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14891v1">2307.14891v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The intrinsically superconducting Dirac semimetal 2M-WS$<em c2="c2">{2}$ is a promising candidate to realize proximity-induced topological superconductivity in its protected surface states. A precise characterization of the bulk superconducting state is essential for understanding the nature of surface superconductivity in the system. Here, we perform a detailed experimental study of the temperature and nonmagnetic disorder dependence of the London penetration depth $\lambda$, the upper critical field $H</em>$, and the superconducting transition temperature $T_c$ in 2M-WS$<em c2="c2">{2}$. We observe a power-law dependence $\lambda(T) - \lambda(0) \propto T^{3}$ at temperatures below $0.35~T_c$, which is remarkably different from the expected exponential attenuation of a fully gapped isotropic $s$-wave superconductor. We then probe the effect of controlled nonmagnetic disorder induced by 2.5 MeV electron irradiation at various doses and find a significant $T_c$ suppression rate. Together with the observed increase of the slope $dH</em>/dT</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Constraints on dark matter and astrophysics from tomographic $γ$-ray cross-correlations</strong></td>
+<td style="text-align: center;">Anya Paopiamsap et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14881v1">2307.14881v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">We study the cross-correlation between maps of the unresolved $\gamma$-ray background constructed from the 12-year data release of the Fermi Large-Area Telescope, and the overdensity of galaxies in the redshift range $z\lesssim0.4$ as measured by the 2MASS Photometric Redshift survey and the WISE-SuperCOSMOS photometric survey. A signal is detected at the $8-9\sigma$ level, which we interpret in terms of both astrophysical $\gamma$-ray sources, and WIMP dark matter decay and annihilation. The sensitivity achieved allows us to characterise the energy and redshift dependence of the signal, and we show that the latter is incompatible with a pure dark matter origin. We thus use our measurement to place an upper bound on the WIMP decay rate and the annihilation cross-section, finding constraints that are competitive with those found in other analyses. Our analysis is based on the extraction of clean model-independent observables that can then be used to constrain arbitrary astrophysical and particle physics models. In this sense we produce measurements of the $\gamma$-ray emissivity as a function of redshift and rest-frame energy $\epsilon$, and of a quantity $F(\epsilon)$ encapsulating all WIMP parameters relevant for dark matter decay or annihilation. We make these measurements, together with a full account of their statistical uncertainties, publicly available.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>One-step nonparametric instrumental regression using smoothing splines</strong></td>
+<td style="text-align: center;">Jad Beyhum et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14867v1">2307.14867v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">We extend nonparametric regression smoothing splines to a context where there is endogeneity and instrumental variables are available. Unlike popular existing estimators, the resulting estimator is one-step and relies on a unique regularization parameter. We derive uniform rates of the convergence for the estimator and its first derivative. We also address the issue of imposing monotonicity in estimation. Simulations confirm the good performances of our estimator compared to two-step procedures. Our method yields economically sensible results when used to estimate Engel curves.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Modeling Interference for the Coexistence of 6G Networks and Passive Sensing Systems</strong></td>
+<td style="text-align: center;">Paolo Testolina et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14848v1">2307.14848v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Future wireless networks and sensing systems will benefit from access to large chunks of spectrum above 100 GHz, to achieve terabit-per-second data rates in 6th Generation (6G) cellular systems and improve accuracy and reach of Earth exploration and sensing and radio astronomy applications. These are extremely sensitive to interference from artificial signals, thus the spectrum above 100~GHz features several bands which are protected from active transmissions under current spectrum regulations. To provide more agile access to the spectrum for both services, active and passive users will have to coexist without harming passive sensing operations. In this paper, we provide the first, fundamental analysis of Radio Frequency Interference (RFI) that large-scale terrestrial deployments introduce in different satellite sensing systems now orbiting the Earth. We develop a geometry-based analysis and extend it into a data-driven model which accounts for realistic propagation, building obstruction, ground reflection, for network topology with up to $10^5$ nodes in more than $85$ km$^2$. We show that the presence of harmful RFI depends on several factors, including network load, density and topology, satellite orientation, and building density. The results and methodology provide the foundation for the development of coexistence solutions and spectrum policy towards 6G.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>State preparation by shallow circuits using feed forward</strong></td>
+<td style="text-align: center;">Harry Buhrman et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14840v1">2307.14840v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">In order to achieve fault-tolerant quantum computation, we need to repeat the following sequence of four steps: First, perform 1 or 2 qubit quantum gates (in parallel if possible). Second, do a syndrome measurement on a subset of the qubits. Third, perform a fast classical computation to establish which errors have occurred (if any). Fourth, depending on the errors, we apply a correction step. Then the procedure repeats with the next sequence of gates. In order for these four steps to succeed, we need the error rate of the gates to be below a certain threshold. Unfortunately, the error rates of current quantum hardware are still too high. On the other hand, current quantum hardware platforms are designed with these four steps in mind. In this work we make use of this four-step scheme not to carry out fault-tolerant computations, but to enhance short, constant-depth, quantum circuits that perform 1 qubit gates and nearest-neighbor 2 qubit gates. To explore how this can be useful, we study a computational model which we call Local Alternating Quantum Classical Computations (LAQCC). In this model, qubits are placed in a grid allowing nearest neighbor interactions; the quantum circuits are of constant depth with intermediate measurements; a classical controller can perform log-depth computations on these intermediate measurement outcomes to control future quantum operations. This model fits naturally between quantum algorithms in the NISQ era and full fledged fault-tolerant quantum computation. We show that LAQCC circuits can create long-ranged interactions, which constant-depth quantum circuits cannot achieve, and use it to construct a range of useful multi-qubit gates. With these gates, we create three new state preparation protocols for a uniform superposition over an arbitrary number of states, W-states and Dicke states.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Experimental validation of particle-in-cell/Monte Carlo collisions simulations in low-pressure neon capacitively coupled plasmas</strong></td>
+<td style="text-align: center;">Chan-Won Park et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14821v1">2307.14821v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Plasma simulations are powerful tools for understanding fundamental plasma science phenomena and for process optimization in applications. To ensure their quantitative accuracy, they must be validated against experiments. In this work, such an experimental validation is performed for a 1d3v particle-in-cell simulation complemented with the Monte Carlo treatment of collision processes of a capacitively coupled radio frequency plasma driven at 13.56 MHz and operated in neon gas. In a geometrically symmetric reactor the electron density in the discharge center and the spatio-temporal distribution of the electron impact excitation rate from the ground into the Ne 2p$_1$ state are measured by a microwave cutoff probe and phase resolved optical emission spectroscopy, respectively. The measurements are conducted for electrode gaps between 50 mm and 90 mm, neutral gas pressures between 20 mTorr and 50 mTorr, and peak-to-peak values of the driving voltage waveform between 250 V and 650 V. Simulations are performed under identical discharge conditions. In the simulations, various combinations of surface coefficients characterising the interactions of electrons and heavy particles with the anodized aluminium electrode surfaces are adopted. We find, that the simulations using a constant effective heavy particle induced secondary electron emission coefficient of 0.3 and a realistic electron-surface interaction model (which considers energy-dependent and material specific elastic and inelastic electron reflection, as well as the emission of true secondary electrons from the surface) yield results which are in good quantitative agreement with the experimental data.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Fate of homogeneous $Z_2$-symmetric scalar condensates</strong></td>
+<td style="text-align: center;">Wen-Yuan Ai et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14811v1">2307.14811v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Dark Matter, if represented by a $Z_2$-symmetric scalar field, can manifest as both particles and condensates. In this paper, we study the evolution of an oscillating homogeneous condensate of a $Z_2$-symmetric scalar field in a thermal plasma in an FLRW universe. We focus on the perturbative regime where the oscillation amplitude is sufficiently small so that parametric resonance is inefficient. This perturbative regime necessarily comprises the late stage of the condensate decay and determines its fate. The coupled coarse-grained equations of motion for the condensate, radiation, and spacetime are derived from first principles using nonequilibrium quantum field theory. We obtain analytical expressions for the relevant microscopic quantities that enter the equations of motion and solve the latter numerically. We find that there is always a nonvanishing relic abundance for a $Z_2$-symmetric condensate because its decay rate decreases faster than the Hubble parameter at late times due to either the amplitude-dependence or the temperature-dependence in the condensate decay rate. Consequently, accounting for the condensate contribution to the overall Dark Matter relic density is essential for $Z_2$ scalar singlet Dark Matter. Unlike normal thermal freeze-out for particles, the condensate relic density depends on the initial condition which we take as arbitrary in the present work provided that it falls within the perturbative regime.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Automatic Parallelization of Software Network Functions</strong></td>
+<td style="text-align: center;">Francisco Pereira et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14791v1">2307.14791v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Software network functions (NFs) trade-off flexibility and ease of deployment for an increased challenge of performance. The traditional way to increase NF performance is by distributing traffic to multiple CPU cores, but this poses a significant challenge: how to parallelize an NF without breaking its semantics? We propose Maestro, a tool that analyzes a sequential implementation of an NF and automatically generates an enhanced parallel version that carefully configures the NIC's Receive Side Scaling mechanism to distribute traffic across cores, while preserving semantics. When possible, Maestro orchestrates a shared-nothing architecture, with each core operating independently without shared memory coordination, maximizing performance. Otherwise, Maestro choreographs a fine-grained read-write locking mechanism that optimizes operation for typical Internet traffic. We parallelized 8 software NFs and show that they generally scale-up linearly until bottlenecked by PCIe when using small packets or by 100Gbps line-rate with typical Internet traffic. Maestro further outperforms modern hardware-based transactional memory mechanisms, even for challenging parallel-unfriendly workloads.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>A Variance-Reduced Aggregation Based Gradient Tracking method for Distributed Optimization over Directed Networks</strong></td>
+<td style="text-align: center;">Shengchao Zhao et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14776v1">2307.14776v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">This paper studies the distributed optimization problem over directed networks with noisy information-sharing. To resolve the imperfect communication issue over directed networks, a series of noise-robust variants of Push-Pull/AB method have been developed. These methods improve the robustness of Push-Pull method against the information-sharing noise through adding small factors on weight matrices and replacing the global gradient tracking with the cumulative gradient tracking. Based on the two techniques, we propose a new variant of the Push-Pull method by presenting a novel mechanism of inter-agent information aggregation, named variance-reduced aggregation (VRA). VRA helps us to release some conditions on the objective function and networks. When the objective function is convex and the sharing-information noise is variance-unbounded, it can be shown that the proposed method converges to the optimal solution almost surely. When the objective function is strongly convex and the sharing-information noise is variance-bounded, the proposed method achieves the convergence rate of $\mathcal{O}\left(k^{-(1-\epsilon)}\right)$ in the mean square sense, where $\epsilon$ could be close to 0 infinitely. Simulated experiments on ridge regression problems verify the effectiveness of the proposed method.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Seasonal Variations of the Atmospheric Neutrino Flux measured in IceCube</strong></td>
+<td style="text-align: center;">Karolin Hymon et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14724v1">2307.14724v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">The IceCube Neutrino Observatory measures high energy atmospheric neutrinos with high statistics. These atmospheric neutrinos are produced in cosmic ray interactions in the atmosphere, mainly by the decay of pions and kaons. The rate of the measured neutrinos is affected by seasonal temperature variations in the stratosphere, which are expected to increase with the energy of the particle. In this contribution, seasonal energy spectra are obtained using a novel spectrum unfolding approach, the Dortmund Spectrum Estimation Algorithm (DSEA+), in which the energy distribution from 125 GeV to 10 TeV is estimated from measured quantities with machine learning algorithms. The seasonal spectral difference to the annual average flux will be discussed based on preliminary results from IceCube's atmospheric muon neutrino data.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Unified Adversarial Patch for Visible-Infrared Cross-modal Attacks in the Physical World</strong></td>
+<td style="text-align: center;">Xingxing Wei et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14682v1">2307.14682v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Physical adversarial attacks have put a severe threat to DNN-based object detectors. To enhance security, a combination of visible and infrared sensors is deployed in various scenarios, which has proven effective in disabling existing single-modal physical attacks. To further demonstrate the potential risks in such cases, we design a unified adversarial patch that can perform cross-modal physical attacks, achieving evasion in both modalities simultaneously with a single patch. Given the different imaging mechanisms of visible and infrared sensors, our work manipulates patches' shape features, which can be captured in different modalities when they undergo changes. To deal with challenges, we propose a novel boundary-limited shape optimization approach that aims to achieve compact and smooth shapes for the adversarial patch, making it easy to implement in the physical world. And a score-aware iterative evaluation method is also introduced to balance the fooling degree between visible and infrared detectors during optimization, which guides the adversarial patch to iteratively reduce the predicted scores of the multi-modal sensors. Furthermore, we propose an Affine-Transformation-based enhancement strategy that makes the learnable shape robust to various angles, thus mitigating the issue of shape deformation caused by different shooting angles in the real world. Our method is evaluated against several state-of-the-art object detectors, achieving an Attack Success Rate (ASR) of over 80%. We also demonstrate the effectiveness of our approach in physical-world scenarios under various settings, including different angles, distances, postures, and scenes for both visible and infrared sensors.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Single Photon Superradiance and Subradiance as Collective Emission From Symmetric and Antisymmetric States</strong></td>
+<td style="text-align: center;">Nicola Piovella et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14667v1">2307.14667v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Recent works have shown that collective single photon spontaneous emission from an ensemble of $N$ resonant two-level atoms is a rich field of study. Superradiance describes emission from a completely symmetric state of $N$ atoms, with a single excited atom prepared with a given phase, for instance imprinted by an external laser. Instead, subradiance is associated with the emission from the remaining $N-1$ asymmetric states, with a collective decay rate less than the single-atom value. Here, we discuss the properties of the orthonormal basis of symmetric and asymmetric states and the entanglement properties of superradiant and subradiant states.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Speed Limits for Deep Learning</strong></td>
+<td style="text-align: center;">Inbar Seroussi et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14653v1">2307.14653v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">State-of-the-art neural networks require extreme computational power to train. It is therefore natural to wonder whether they are optimally trained. Here we apply a recent advancement in stochastic thermodynamics which allows bounding the speed at which one can go from the initial weight distribution to the final distribution of the fully trained network, based on the ratio of their Wasserstein-2 distance and the entropy production rate of the dynamical process connecting them. Considering both gradient-flow and Langevin training dynamics, we provide analytical expressions for these speed limits for linear and linearizable neural networks e.g. Neural Tangent Kernel (NTK). Remarkably, given some plausible scaling assumptions on the NTK spectra and spectral decomposition of the labels -- learning is optimal in a scaling sense. Our results are consistent with small-scale experiments with Convolutional Neural Networks (CNNs) and Fully Connected Neural networks (FCNs) on CIFAR-10, showing a short highly non-optimal regime followed by a longer optimal regime.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Linear Convergence of Black-Box Variational Inference: Should We Stick the Landing?</strong></td>
+<td style="text-align: center;">Kyurae Kim et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14642v1">2307.14642v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">We prove that black-box variational inference (BBVI) with control variates, particularly the sticking-the-landing (STL) estimator, converges at a geometric (traditionally called "linear") rate under perfect variational family specification. In particular, we prove a quadratic bound on the gradient variance of the STL estimator, one which encompasses misspecified variational families. Combined with previous works on the quadratic variance condition, this directly implies convergence of BBVI with the use of projected stochastic gradient descent. We also improve existing analysis on the regular closed-form entropy gradient estimators, which enables comparison against the STL estimator and provides explicit non-asymptotic complexity guarantees for both.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Final results of Borexino on CNO solar neutrinos</strong></td>
+<td style="text-align: center;">D. Basilico et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14636v1">2307.14636v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">We report the first measurement of CNO solar neutrinos by Borexino that uses the Correlated Integrated Directionality (CID) method, exploiting the sub-dominant Cherenkov light in the liquid scintillator detector. The directional information of the solar origin of the neutrinos is preserved by the fast Cherenkov photons from the neutrino scattered electrons, and is used to discriminate between signal and background. The directional information is independent from the spectral information on which the previous CNO solar neutrino measurements by Borexino were based. While the CNO spectral analysis could only be applied on the Phase-III dataset, the directional analysis can use the complete Borexino data taking period from 2007 to 2021. The absence of CNO neutrinos has been rejected with &gt;5{\sigma} credible level using the Bayesian statistics. The directional CNO measurement is obtained without an external constraint on the $^{210}$Bi contamination of the liquid scintillator, which was applied in the spectral analysis approach. The final and the most precise CNO measurement of Borexino is then obtained by combining the new CID-based CNO result with an improved spectral fit of the Phase-III dataset. Including the statistical and the systematic errors, the extracted CNO interaction rate is $R(\mathrm{CNO})=6.7^{+1.2}<em>{-0.8} \, \mathrm{cpd/100 \, tonnes}$. Taking into account the neutrino flavor conversion, the resulting CNO neutrino flux at Earth is $\Phi</em>\mathrm{CNO}=6.7 ^{+1.2}_{-0.8} \times 10^8 \, \mathrm{cm^{-2} s^{-1}}$, in agreement with the high metallicity Standard Solar Models. The results described in this work reinforce the role of the event directional information in large-scale liquid scintillator detectors and open up new avenues for the next-generation liquid scintillator or hybrid neutrino experiments.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>BubbleML: A Multi-Physics Dataset and Benchmarks for Machine Learning</strong></td>
+<td style="text-align: center;">Sheikh Md Shakeel Hassan et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14623v1">2307.14623v1</a></td>
+<td style="text-align: center;"><a href="https://github.com/hpcforge/bubbleml">link</a></td>
+<td style="text-align: center;">In the field of phase change phenomena, the lack of accessible and diverse datasets suitable for machine learning (ML) training poses a significant challenge. Existing experimental datasets are often restricted, with limited availability and sparse ground truth data, impeding our understanding of this complex multi-physics phenomena. To bridge this gap, we present the BubbleML Dataset(https://github.com/HPCForge/BubbleML) which leverages physics-driven simulations to provide accurate ground truth information for various boiling scenarios, encompassing nucleate pool boiling, flow boiling, and sub-cooled boiling. This extensive dataset covers a wide range of parameters, including varying gravity conditions, flow rates, sub-cooling levels, and wall superheat, comprising 51 simulations. BubbleML is validated against experimental observations and trends, establishing it as an invaluable resource for ML research. Furthermore, we showcase its potential to facilitate exploration of diverse downstream tasks by introducing two benchmarks: (a) optical flow analysis to capture bubble dynamics, and (b) operator networks for learning temperature dynamics. The BubbleML dataset and its benchmarks serve as a catalyst for advancements in ML-driven research on multi-physics phase change phenomena, enabling the development and comparison of state-of-the-art techniques and models.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>Nonlinear Convex Optimization: From Relaxed Proximal Point Algorithm to Prediction Correction Method</strong></td>
+<td style="text-align: center;">Sai Wang et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14615v1">2307.14615v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Nonlinear convex problems arise in various areas of applied mathematics and engineering. Classical techniques such as the relaxed proximal point algorithm (PPA) and the prediction correction (PC) method were proposed for linearly constrained convex problems. However, these methods have not been investigated for nonlinear constraints. In this paper, we customize the varying proximal matrix to develop the relaxed PPA for nonlinear convex problems. We also extend the PC method to nonlinear convex problems. As both methods are an extension of the PPA-based contraction method, their sequence convergence can be directly established. Moreover, we theoretically demonstrate that both methods can achieve a convergence rate of $O(1/t)$. Numerical results once again support the theoretical analysis.</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2023-07-27</strong></td>
+<td style="text-align: center;"><strong>$ \mathrm{Sr}<em 2="2">{4}\mathrm{Al}</em>\mathrm{O}_{7}$: A New Sacrificial Layer with High Water Dissolution Rate for the Synthesis of Freestanding Oxide Membranes</strong></td>
+<td style="text-align: center;">Leyan Nian et.al.</td>
+<td style="text-align: center;"><a href="http://arxiv.org/abs/2307.14584v1">2307.14584v1</a></td>
+<td style="text-align: center;">null</td>
+<td style="text-align: center;">Freestanding perovskite oxide membranes have drawn great attention recently since they offer exceptional structural tunability and stacking ability, providing new opportunities in fundamental research and potential device applications in silicon-based semiconductor technology. Among different types of sacrificial layers, the $ \mathrm{(Ca, Sr, Ba)}<em 2="2">{3}\mathrm{Al}</em>\mathrm{O}<em 2="2">{6}$ compounds are most widely used since they can be dissolved in water and prepare high-quality perovskite oxide membranes with clean and sharp surfaces and interfaces. However, the typical transfer process takes a long time (up to hours) in obtaining millimeter-size freestanding membranes, let alone realize wafer-scale samples with high yield. Here, we introduce a new member of the $ \mathrm{SrO-}\mathrm{Al}</em>\mathrm{O}<em 4="4">{3}$ family,$ \mathrm{Sr}</em>\mathrm{Al}<em 7="7">{2}\mathrm{O}</em>,$, and demonstrate its high dissolution rate, about 10 times higher than that of $ \mathrm{Sr}<em 2="2">{3}\mathrm{Al}</em>\mathrm{O}<em 4="4">{6}$. The high-dissolution-rate of $ \mathrm{Sr}</em>\mathrm{Al}<em 7="7">{2}\mathrm{O}</em>$ is most likely related to the more discrete Al-O networks and higher concentration of water-soluble Sr-O species in this compound. Our work significantly facilitates the preparation of freestanding membranes and sheds light on the integration of multifunctional perovskite oxides in practical electronic devices.</td>
+</tr>
+</tbody>
+</table>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>
